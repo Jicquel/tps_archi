@@ -33,8 +33,59 @@ architecture mixte of PC is
              Q   : out   std_logic
 				 );
    end component;
-
+  
+   signal qend, qinit, qwait, qtest, qAB, qBA: std_logic;
 
 begin
--- A completer
+    b_wait:BDS
+    port map(
+                C => clk, 
+                D => qend or (not start and qwait),
+                S => reset,
+                Q => qwait
+            );
+    b_init: BDC
+    port map(
+                C => clk,
+                D => start and qwait,
+                CLR => reset,
+                Q => qinit
+            );
+    b_dnd: BDC
+    port map(
+                C => clk,
+                D => egal and qtest,
+                CLR => reset,
+                Q => qend
+            );
+    b_test: BDC
+    port map(
+                C => clk,
+                D => qinit or qAB or qBA,
+                CLR => reset,
+                Q => qtest
+            );
+    b_AB: BDC
+    port map(
+                C => clk,
+                D => not egal and not inf and qtest,
+                CLR => reset,
+                Q => qAB
+            );
+    b_BA: BDC
+    port map(
+                C => clk,
+                D => not egal and inf and qtest,
+                CLR => reset,
+                Q => qBA
+            );
+   
+    getA <= qinit;
+    ldA <= qinit or qAB;
+    getB <= qinit;
+    ldB <= qinit or qBA;
+    subBA <= qBA;
+    done <= qend;
+
+
 end mixte;

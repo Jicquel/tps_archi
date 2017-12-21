@@ -13,4 +13,4 @@ INFO:WebTalk:1 - WebTalk is enabled because you are using a WebPACK license.
 INFO:WebTalk:8 - WebTalk Install setting is ON.
 INFO:WebTalk:6 - WebTalk User setting is ON.
 
-INFO:WebTalk:5 - /user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at /Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html
+INFO:WebTalk:5 - /user/5/.base/jicquelv/home/archi/tp4/src_etd/usage_statistics_webtalk.html WebTalk report has not been sent to Xilinx.  Please check your network and proxy settings.  For additional details about this file, please refer to the WebTalk help file at /Xilinx/14.7/ISE_DS/ISE/data/reports/webtalk_introduction.html

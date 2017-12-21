@@ -2,14 +2,14 @@ Command line:
    tb_PO_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  43374
+     -socket  48214
 
-Fri Sep 18 15:52:07 2015
+Thu Dec  7 09:06:21 2017
 
 
- Elaboration Time: 0.06 sec
+ Elaboration Time: 0.03 sec
 
- Current Memory Usage: 218.423 Meg
+ Current Memory Usage: 231.371 Meg
 
  Total Signals          : 56
  Total Nets             : 95
@@ -26,10 +26,17 @@ User(VHDL) Code Called Simulation Stop
 In process tb_PO.vhd:stim_proc 
  
 
+Total Line Count : 68
 
- Total Simulation Time: 0.07 sec
+** Failure:Simulation terminée
+User(VHDL) Code Called Simulation Stop
+In process tb_PO.vhd:stim_proc 
+ 
 
- Current Memory Usage: 294.978 Meg
 
-Fri Sep 18 15:55:13 2015
+ Total Simulation Time: 0.18 sec
+
+ Current Memory Usage: 305.828 Meg
+
+Thu Dec  7 09:13:15 2017
 

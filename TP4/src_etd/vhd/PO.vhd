@@ -48,5 +48,46 @@ architecture mixte of PO is
         signal mux1,mux2,mux3,mux4, qA,qB, resALU : unsigned (7 downto 0);
 
 begin
--- A completer
+    
+    registreA: FD8CE
+    port map ( C => clk,
+               CE => ldA,
+               CLR => reset,
+               D => mux1,
+               Q => qA);
+    
+    registreB: FD8CE
+    port map ( C => clk,
+               CE => ldB,
+               CLR => reset,
+               D => mux2,
+               Q => qB);
+
+    comparateur: COMPM8
+    port map ( A => qA,
+               B => qB,
+               GT => gt,
+               LT => inf
+           );
+
+    add_sous:ADSU8
+    port map ( A => mux3,
+               ADD => '0',
+               B => mux4,
+               CI => '1',
+               CO => open,
+               OFL => open,
+               S => resALU);
+
+    mux1 <= resALU when getA='0' else A0;
+    mux2 <= resALU when getB='0' else B0;
+    mux3 <= qA when subBA='0' else qB;
+    mux4 <= qB when subBA='0' else qA;
+    EQ <= (not gt) and (not inf);
+    LT <= inf;
+    Res <= qB;
+
+
+
+
 end mixte;

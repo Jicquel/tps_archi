@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/tb_pgcd.vhd";
+static const char *ng0 = "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/tb_pgcd.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_374109322130769762_503743352(char *, unsigned char );
@@ -103,7 +103,7 @@ LAB0:    t1 = (t0 + 3512U);
 LAB3:    goto *t2;
 
 LAB2:    xsi_set_current_line(45, ng0);
-    t2 = (t0 + 6928);
+    t2 = (t0 + 6784);
     t4 = (t0 + 4208);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -112,7 +112,7 @@ LAB2:    xsi_set_current_line(45, ng0);
     memcpy(t8, t2, 8U);
     xsi_driver_first_trans_fast(t4);
     xsi_set_current_line(46, ng0);
-    t2 = (t0 + 6936);
+    t2 = (t0 + 6792);
     t4 = (t0 + 4272);
     t5 = (t4 + 56U);
     t6 = *((char **)t5);
@@ -214,7 +214,7 @@ LAB17:    goto LAB16;
 LAB19:    goto LAB17;
 
 LAB21:    xsi_set_current_line(57, ng0);
-    t2 = (t0 + 6944);
+    t2 = (t0 + 6800);
     xsi_report(t2, 19U, (unsigned char)3);
     xsi_set_current_line(58, ng0);
 

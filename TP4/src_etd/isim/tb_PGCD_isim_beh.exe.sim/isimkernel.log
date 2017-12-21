@@ -2,14 +2,14 @@ Command line:
    tb_PGCD_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  38369
+     -socket  56232
 
-Fri Sep 18 17:09:13 2015
+Thu Dec  7 09:49:20 2017
 
 
- Elaboration Time: 0.07 sec
+ Elaboration Time: 0.03 sec
 
- Current Memory Usage: 218.419 Meg
+ Current Memory Usage: 231.371 Meg
 
  Total Signals          : 112
  Total Nets             : 109
@@ -26,10 +26,17 @@ User(VHDL) Code Called Simulation Stop
 In process tb_pgcd.vhd:43 
  
 
+Total Line Count : 81
 
- Total Simulation Time: 0.07 sec
+** Failure:Simulation terminé
+User(VHDL) Code Called Simulation Stop
+In process tb_pgcd.vhd:43 
+ 
 
- Current Memory Usage: 294.973 Meg
 
-Fri Sep 18 17:09:50 2015
+ Total Simulation Time: 0.45 sec
+
+ Current Memory Usage: 305.828 Meg
+
+Thu Dec  7 09:58:07 2017
 

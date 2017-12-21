@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/compm8.vhd";
+static const char *ng0 = "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/compm8.vhd";
 extern char *IEEE_P_1242562249;
 
 unsigned char ieee_p_1242562249_sub_1434214030532753770_1035706684(char *, char *, char *, char *, char *);
@@ -50,10 +50,10 @@ static void work_a_0431955149_3669390030_p_0(char *t0)
 LAB0:    xsi_set_current_line(17, ng0);
     t1 = (t0 + 1352U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5216U);
+    t1 = (t0 + 5136U);
     t3 = (t0 + 1512U);
     t4 = *((char **)t3);
-    t3 = (t0 + 5232U);
+    t3 = (t0 + 5152U);
     t5 = ieee_p_1242562249_sub_1434214030532825644_1035706684(IEEE_P_1242562249, t2, t1, t4, t3);
     if (t5 != 0)
         goto LAB3;
@@ -106,10 +106,10 @@ static void work_a_0431955149_3669390030_p_1(char *t0)
 LAB0:    xsi_set_current_line(18, ng0);
     t1 = (t0 + 1352U);
     t2 = *((char **)t1);
-    t1 = (t0 + 5216U);
+    t1 = (t0 + 5136U);
     t3 = (t0 + 1512U);
     t4 = *((char **)t3);
-    t3 = (t0 + 5232U);
+    t3 = (t0 + 5152U);
     t5 = ieee_p_1242562249_sub_1434214030532753770_1035706684(IEEE_P_1242562249, t2, t1, t4, t3);
     if (t5 != 0)
         goto LAB3;

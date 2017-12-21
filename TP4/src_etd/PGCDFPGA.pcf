@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri Sep 18 17:58:23 2015
+// Written by: Map P.20131013 on Thu Dec 07 10:26:58 2017
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -16,19 +16,19 @@ COMP "aff<0>" LOCATE = SITE "M14" LEVEL 1;
 COMP "aff<1>" LOCATE = SITE "M15" LEVEL 1;
 COMP "aff<2>" LOCATE = SITE "G14" LEVEL 1;
 COMP "aff<3>" LOCATE = SITE "D18" LEVEL 1;
-TIMEGRP sys_clk_pin = BEL "i_PGCD/i_PO/regB/Q_7" BEL "i_PGCD/i_PO/regB/Q_6"
-        BEL "i_PGCD/i_PO/regB/Q_5" BEL "i_PGCD/i_PO/regB/Q_4" BEL
-        "i_PGCD/i_PO/regB/Q_3" BEL "i_PGCD/i_PO/regB/Q_2" BEL
-        "i_PGCD/i_PO/regB/Q_1" BEL "i_PGCD/i_PO/regB/Q_0" BEL
-        "i_PGCD/i_PO/regA/Q_7" BEL "i_PGCD/i_PO/regA/Q_6" BEL
-        "i_PGCD/i_PO/regA/Q_5" BEL "i_PGCD/i_PO/regA/Q_4" BEL
-        "i_PGCD/i_PO/regA/Q_3" BEL "i_PGCD/i_PO/regA/Q_2" BEL
-        "i_PGCD/i_PO/regA/Q_1" BEL "i_PGCD/i_PO/regA/Q_0" BEL "regA/Q_7" BEL
-        "regA/Q_6" BEL "regA/Q_5" BEL "regA/Q_4" BEL "regA/Q_3" BEL "regA/Q_2"
-        BEL "regA/Q_1" BEL "regA/Q_0" BEL "i_PGCD/i_PC/s_test/Q" BEL
-        "i_PGCD/i_PC/s_subab/Q" BEL "i_PGCD/i_PC/s_subba/Q" BEL
-        "i_PGCD/i_PC/s_end/Q" BEL "i_PGCD/i_PC/s_init/Q" BEL
-        "i_PGCD/i_PC/s_wait/Q" BEL "clk_BUFGP/BUFG";
+TIMEGRP sys_clk_pin = BEL "i_PGCD/i_PO/registreB/Q_7" BEL
+        "i_PGCD/i_PO/registreB/Q_6" BEL "i_PGCD/i_PO/registreB/Q_5" BEL
+        "i_PGCD/i_PO/registreB/Q_4" BEL "i_PGCD/i_PO/registreB/Q_3" BEL
+        "i_PGCD/i_PO/registreB/Q_2" BEL "i_PGCD/i_PO/registreB/Q_1" BEL
+        "i_PGCD/i_PO/registreB/Q_0" BEL "i_PGCD/i_PO/registreA/Q_7" BEL
+        "i_PGCD/i_PO/registreA/Q_6" BEL "i_PGCD/i_PO/registreA/Q_5" BEL
+        "i_PGCD/i_PO/registreA/Q_4" BEL "i_PGCD/i_PO/registreA/Q_3" BEL
+        "i_PGCD/i_PO/registreA/Q_2" BEL "i_PGCD/i_PO/registreA/Q_1" BEL
+        "i_PGCD/i_PO/registreA/Q_0" BEL "regA/Q_7" BEL "regA/Q_6" BEL
+        "regA/Q_5" BEL "regA/Q_4" BEL "regA/Q_3" BEL "regA/Q_2" BEL "regA/Q_1"
+        BEL "regA/Q_0" BEL "i_PGCD/i_PC/b_init/Q" BEL "i_PGCD/i_PC/b_dnd/Q"
+        BEL "i_PGCD/i_PC/b_test/Q" BEL "i_PGCD/i_PC/b_AB/Q" BEL
+        "i_PGCD/i_PC/b_BA/Q" BEL "i_PGCD/i_PC/b_wait/Q" BEL "clk_BUFGP/BUFG";
 TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 125 MHz HIGH 50%;
 SCHEMATIC END;
 

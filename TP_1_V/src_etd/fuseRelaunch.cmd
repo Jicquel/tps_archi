@@ -1,0 +1,1 @@
+-intstyle "xflow" -incremental -lib "secureip" -o "tb_div_freq_isim_beh.exe" -prj "tb_div_freq.prj" "work.tb_div_freq" 

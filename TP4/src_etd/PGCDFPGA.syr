@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> 
 Reading design: PGCDFPGA.prj
@@ -108,31 +108,37 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Parsing VHDL file "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/BDS.vhd" into library work
+Parsing VHDL file "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/BDS.vhd" into library work
 Parsing entity <BDS>.
 Parsing architecture <beh> of entity <bds>.
-Parsing VHDL file "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/BDC.vhd" into library work
+Parsing VHDL file "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/BDC.vhd" into library work
 Parsing entity <BDC>.
 Parsing architecture <beh> of entity <bdc>.
-Parsing VHDL file "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/fd8ce.vhd" into library work
+Parsing VHDL file "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/fd8ce.vhd" into library work
 Parsing entity <FD8CE>.
 Parsing architecture <Behavioral> of entity <fd8ce>.
-Parsing VHDL file "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/compm8.vhd" into library work
+Parsing VHDL file "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/compm8.vhd" into library work
 Parsing entity <COMPM8>.
 Parsing architecture <COMPM8_V> of entity <compm8>.
-Parsing VHDL file "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/adsu8.vhd" into library work
+Parsing VHDL file "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/adsu8.vhd" into library work
 Parsing entity <ADSU8>.
 Parsing architecture <ADSU8_V> of entity <adsu8>.
-Parsing VHDL file "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/PO.vhd" into library work
+Parsing VHDL file "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/PO.vhd" into library work
 Parsing entity <PO>.
 Parsing architecture <mixte> of entity <po>.
-Parsing VHDL file "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/PC.vhd" into library work
+Parsing VHDL file "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/PC.vhd" into library work
 Parsing entity <PC>.
 Parsing architecture <mixte> of entity <pc>.
-Parsing VHDL file "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/pgcd.vhd" into library work
+WARNING:HDLCompiler:946 - "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/PC.vhd" Line 43: Actual for formal port d is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/PC.vhd" Line 50: Actual for formal port d is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/PC.vhd" Line 57: Actual for formal port d is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/PC.vhd" Line 64: Actual for formal port d is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/PC.vhd" Line 71: Actual for formal port d is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/PC.vhd" Line 78: Actual for formal port d is neither a static name nor a globally static expression
+Parsing VHDL file "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/pgcd.vhd" into library work
 Parsing entity <PGCD>.
 Parsing architecture <mixte> of entity <pgcd>.
-Parsing VHDL file "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/pgcdfpga.vhd" into library work
+Parsing VHDL file "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/pgcdfpga.vhd" into library work
 Parsing entity <PGCDFPGA>.
 Parsing architecture <mixte> of entity <pgcdfpga>.
 
@@ -154,75 +160,75 @@ Elaborating entity <PO> (architecture <mixte>) from library <work>.
 
 Elaborating entity <FD8CE> (architecture <Behavioral>) from library <work>.
 
-Elaborating entity <ADSU8> (architecture <ADSU8_V>) from library <work>.
-
 Elaborating entity <COMPM8> (architecture <COMPM8_V>) from library <work>.
+
+Elaborating entity <ADSU8> (architecture <ADSU8_V>) from library <work>.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <PGCDFPGA>.
-    Related source file is "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/pgcdfpga.vhd".
+    Related source file is "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/pgcdfpga.vhd".
     Summary:
 	inferred   1 Multiplexer(s).
 Unit <PGCDFPGA> synthesized.
 
 Synthesizing Unit <PGCD>.
-    Related source file is "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/pgcd.vhd".
+    Related source file is "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/pgcd.vhd".
     Summary:
 	no macro.
 Unit <PGCD> synthesized.
 
 Synthesizing Unit <PC>.
-    Related source file is "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/PC.vhd".
+    Related source file is "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/PC.vhd".
     Summary:
 	no macro.
 Unit <PC> synthesized.
 
 Synthesizing Unit <BDS>.
-    Related source file is "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/BDS.vhd".
+    Related source file is "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/BDS.vhd".
     Found 1-bit register for signal <Q>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 Unit <BDS> synthesized.
 
 Synthesizing Unit <BDC>.
-    Related source file is "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/BDC.vhd".
+    Related source file is "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/BDC.vhd".
     Found 1-bit register for signal <Q>.
     Summary:
 	inferred   1 D-type flip-flop(s).
 Unit <BDC> synthesized.
 
 Synthesizing Unit <PO>.
-    Related source file is "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/PO.vhd".
-INFO:Xst:3210 - "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/PO.vhd" line 67: Output port <CO> of the instance <ALU> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/PO.vhd" line 67: Output port <OFL> of the instance <ALU> is unconnected or connected to loadless signal.
+    Related source file is "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/PO.vhd".
+INFO:Xst:3210 - "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/PO.vhd" line 73: Output port <CO> of the instance <add_sous> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/PO.vhd" line 73: Output port <OFL> of the instance <add_sous> is unconnected or connected to loadless signal.
     Summary:
 	inferred   4 Multiplexer(s).
 Unit <PO> synthesized.
 
 Synthesizing Unit <FD8CE>.
-    Related source file is "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/fd8ce.vhd".
+    Related source file is "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/fd8ce.vhd".
     Found 8-bit register for signal <Q>.
     Summary:
 	inferred   8 D-type flip-flop(s).
 Unit <FD8CE> synthesized.
 
-Synthesizing Unit <ADSU8>.
-    Related source file is "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/adsu8.vhd".
-    Found 10-bit subtractor for signal <adsu_p.adsu_tmp> created at line 24.
-    Summary:
-	inferred   1 Adder/Subtractor(s).
-Unit <ADSU8> synthesized.
-
 Synthesizing Unit <COMPM8>.
-    Related source file is "/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/vhd/compm8.vhd".
+    Related source file is "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/compm8.vhd".
     Found 8-bit comparator greater for signal <GT> created at line 17
     Found 8-bit comparator greater for signal <LT> created at line 18
     Summary:
 	inferred   2 Comparator(s).
 Unit <COMPM8> synthesized.
+
+Synthesizing Unit <ADSU8>.
+    Related source file is "/user/5/.base/jicquelv/home/archi/tp4/src_etd/vhd/adsu8.vhd".
+    Found 10-bit subtractor for signal <adsu_p.adsu_tmp> created at line 24.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <ADSU8> synthesized.
 
 =========================================================================
 HDL Synthesis Report
@@ -399,20 +405,20 @@ Timing constraint: Default period analysis for Clock 'clk'
   Total number of paths / destination ports: 519 / 54
 -------------------------------------------------------------------------
 Delay:               2.258ns (Levels of Logic = 3)
-  Source:            i_PGCD/i_PO/regB/Q_1 (FF)
-  Destination:       i_PGCD/i_PC/s_subab/Q (FF)
+  Source:            i_PGCD/i_PO/registreB/Q_1 (FF)
+  Destination:       i_PGCD/i_PC/b_dnd/Q (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: i_PGCD/i_PO/regB/Q_1 to i_PGCD/i_PC/s_subab/Q
+  Data Path: i_PGCD/i_PO/registreB/Q_1 to i_PGCD/i_PC/b_dnd/Q
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             5   0.282   0.662  i_PGCD/i_PO/regB/Q_1 (i_PGCD/i_PO/regB/Q_1)
+     FDCE:C->Q             5   0.282   0.662  i_PGCD/i_PO/registreB/Q_1 (i_PGCD/i_PO/registreB/Q_1)
      LUT4:I0->O            1   0.053   0.725  i_PGCD/i_PO/EQ1 (i_PGCD/i_PO/EQ)
      LUT6:I1->O            2   0.053   0.419  i_PGCD/i_PO/EQ4 (i_PGCD/i_PO/EQ3)
-     LUT6:I5->O            1   0.053   0.000  i_PGCD/i_PC/d_end1 (i_PGCD/i_PC/d_end)
-     FDR:D                     0.011          i_PGCD/i_PC/s_end/Q
+     LUT6:I5->O            1   0.053   0.000  i_PGCD/i_PC/egal_qtest_AND_7_o1 (i_PGCD/i_PC/egal_qtest_AND_7_o)
+     FDR:D                     0.011          i_PGCD/i_PC/b_AB/Q
     ----------------------------------------
     Total                      2.258ns (0.452ns logic, 1.806ns route)
                                        (20.0% logic, 80.0% route)
@@ -423,15 +429,15 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
 -------------------------------------------------------------------------
 Offset:              0.876ns (Levels of Logic = 1)
   Source:            reset (PAD)
-  Destination:       i_PGCD/i_PO/regB/Q_7 (FF)
+  Destination:       i_PGCD/i_PO/registreB/Q_7 (FF)
   Destination Clock: clk rising
 
-  Data Path: reset to i_PGCD/i_PO/regB/Q_7
+  Data Path: reset to i_PGCD/i_PO/registreB/Q_7
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            30   0.000   0.551  reset_IBUF (reset_IBUF)
-     FDCE:CLR                  0.325          i_PGCD/i_PO/regB/Q_0
+     FDCE:CLR                  0.325          i_PGCD/i_PO/registreB/Q_0
     ----------------------------------------
     Total                      0.876ns (0.325ns logic, 0.551ns route)
                                        (37.1% logic, 62.9% route)
@@ -491,15 +497,15 @@ clk            |    2.258|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 10.00 secs
-Total CPU time to Xst completion: 9.27 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 6.77 secs
  
 --> 
 
 
-Total memory usage is 608216 kilobytes
+Total memory usage is 613628 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
 Number of infos    :    2 (   0 filtered)
 

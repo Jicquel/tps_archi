@@ -1,8 +1,9 @@
-Running: /Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib secureip -o tb_PGCDFPGA_isim_beh.exe -prj tb_PGCDFPGA.prj work.tb_PGCDFPGA 
+Running: /Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle xflow -incremental -lib secureip -o tb_PGCD_isim_beh.exe -prj tb_PGCD.prj work.tb_PGCD 
 ISim P.20131013 (signature 0xfbc00daa)
-Number of CPUs detected in this system: 2
-Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+WARNING:Simulator:1010 - One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running fuse with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
 Parsing VHDL file "vhd/BDS.vhd" into library work
 Parsing VHDL file "vhd/BDC.vhd" into library work
 Parsing VHDL file "vhd/fd8ce.vhd" into library work
@@ -10,13 +11,18 @@ Parsing VHDL file "vhd/compm8.vhd" into library work
 Parsing VHDL file "vhd/adsu8.vhd" into library work
 Parsing VHDL file "vhd/PO.vhd" into library work
 Parsing VHDL file "vhd/PC.vhd" into library work
+WARNING:HDLCompiler:946 - "vhd/PC.vhd" Line 43: Actual for formal port d is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "vhd/PC.vhd" Line 50: Actual for formal port d is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "vhd/PC.vhd" Line 57: Actual for formal port d is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "vhd/PC.vhd" Line 64: Actual for formal port d is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "vhd/PC.vhd" Line 71: Actual for formal port d is neither a static name nor a globally static expression
+WARNING:HDLCompiler:946 - "vhd/PC.vhd" Line 78: Actual for formal port d is neither a static name nor a globally static expression
 Parsing VHDL file "vhd/pgcd.vhd" into library work
-Parsing VHDL file "vhd/pgcdfpga.vhd" into library work
-Parsing VHDL file "vhd/tb_pgcdfpga.vhd" into library work
+Parsing VHDL file "vhd/tb_pgcd.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 96080 KB
-Fuse CPU Usage: 1010 ms
+Fuse Memory Usage: 96696 KB
+Fuse CPU Usage: 1020 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -24,16 +30,15 @@ Compiling architecture beh of entity BDS [bds_default]
 Compiling architecture beh of entity BDC [bdc_default]
 Compiling architecture mixte of entity PC [pc_default]
 Compiling architecture behavioral of entity FD8CE [fd8ce_default]
-Compiling architecture adsu8_v of entity ADSU8 [adsu8_default]
 Compiling architecture compm8_v of entity COMPM8 [compm8_default]
+Compiling architecture adsu8_v of entity ADSU8 [adsu8_default]
 Compiling architecture mixte of entity PO [po_default]
 Compiling architecture mixte of entity PGCD [pgcd_default]
-Compiling architecture mixte of entity PGCDFPGA [pgcdfpga_default]
-Compiling architecture behavioral of entity tb_pgcdfpga
+Compiling architecture behavioral of entity tb_pgcd
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 22 VHDL Units
-Built simulation executable tb_PGCDFPGA_isim_beh.exe
-Fuse Memory Usage: 403704 KB
-Fuse CPU Usage: 1130 ms
-GCC CPU Usage: 200 ms
+Compiled 20 VHDL Units
+Built simulation executable tb_PGCD_isim_beh.exe
+Fuse Memory Usage: 668552 KB
+Fuse CPU Usage: 1110 ms
+GCC CPU Usage: 310 ms

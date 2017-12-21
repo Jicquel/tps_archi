@@ -28,8 +28,8 @@ int main(int argc, char **argv)
     ieee_p_2592010699_init();
     ieee_p_1242562249_init();
     work_a_2396511616_3212880686_init();
-    work_a_2942309117_0934141848_init();
     work_a_0431955149_3669390030_init();
+    work_a_2942309117_0934141848_init();
     work_a_2424661487_3271922888_init();
     work_a_3226442309_2372691052_init();
 

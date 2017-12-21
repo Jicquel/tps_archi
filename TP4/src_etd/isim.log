@@ -1,5 +1,5 @@
 ISim log file
-Running: ./tb_PGCDFPGA_isim_beh.exe -gui -tclbatch isim.cmd -wdb tb_PGCDFPGA_isim_beh.wbd 
+Running: ./tb_PGCD_isim_beh.exe -gui -tclbatch isim.cmd -wdb tb_PGCD_isim_beh.wbd 
 ISim P.20131013 (signature 0xfbc00daa)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -14,6 +14,18 @@ Finished circuit initialization process.
 
 ** Failure:Simulation terminé
 User(VHDL) Code Called Simulation Stop
-In process tb_pgcdfpga.vhd:40 
+In process tb_pgcd.vhd:43 
+ 
+INFO: Simulator is stopped.
+# run all
+INFO: Simulator is stopped.
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+** Failure:Simulation terminé
+User(VHDL) Code Called Simulation Stop
+In process tb_pgcd.vhd:43 
  
 INFO: Simulator is stopped.
