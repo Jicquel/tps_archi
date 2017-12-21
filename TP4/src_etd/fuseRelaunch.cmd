@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "tb_PGCDFPGA_isim_beh.exe" -prj "tb_PGCDFPGA.prj" "work.tb_PGCDFPGA" 

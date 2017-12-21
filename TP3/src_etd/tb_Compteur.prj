@@ -1,0 +1,3 @@
+vhdl work "vhd/Compteur.vhd"
+vhdl work "vhd/bascule_d_nbits.vhd"
+vhdl work "vhd/tb_Compteur.vhd"

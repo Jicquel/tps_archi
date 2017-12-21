@@ -1,0 +1,1 @@
+-intstyle "xflow" -incremental -lib "secureip" -o "tb_global_isim_beh.exe" -prj "tb_global.prj" "work.tb_global" 

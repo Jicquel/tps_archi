@@ -1,0 +1,3 @@
+vhdl work "vhd/lfsr.vhd"
+vhdl work "vhd/bascule_d.vhd"
+vhdl work "vhd/auto.vhd"

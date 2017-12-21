@@ -1,0 +1,8 @@
+INTSTYLE=xflow
+INFILE=/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/VGA_bitmap.ncd
+OUTFILE=/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/golden.bit
+FAMILY=Zynq
+PART=xc7z010-1clg400
+WORKINGDIR=/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd
+LICENSE=WebPack
+USER_INFO=211048036_0_0_210

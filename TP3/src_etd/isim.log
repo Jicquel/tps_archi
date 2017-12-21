@@ -1,0 +1,24 @@
+ISim log file
+Running: ./tb_VGA_isim_beh.exe -gui -tclbatch isim.cmd -wdb tb_VGA_isim_beh.wbd 
+ISim P.20131013 (signature 0xfbc00daa)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 20 ns
+Simulator is doing circuit initialization process.
+at 0 ps, Instance /tb_vga/uut/cRAM_VIDEO/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_vga/uut/cGeneRGB/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_vga/uut/cGeneRGB/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+at 0 ps, Instance /tb_vga/uut/cGeneRGB/ : Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Finished circuit initialization process.
+at 0 ps, Instance /tb_vga/uut/cRAM_VIDEO/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+at 0 ps, Instance /tb_vga/uut/cRAM_VIDEO/ : Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+# run all
+Stopped at time : 574504 ns : File "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/reg2b.vhd" Line 15
+# run 1.00us
+# run all
+Stopped at time : 1355444 ns : File "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/reg2b.vhd" Line 15

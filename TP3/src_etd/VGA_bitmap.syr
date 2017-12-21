@@ -1,0 +1,997 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+Reading design: VGA_bitmap.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "VGA_bitmap.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "VGA_bitmap"
+Output Format                      : NGC
+Target Device                      : xc7z010-1-clg400
+
+---- Source Options
+Top Module Name                    : VGA
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/GeneSync.vhd" into library work
+Parsing entity <GeneSync>.
+Parsing architecture <Behavioral> of entity <genesync>.
+Parsing VHDL file "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/GeneRGB_bitmap.vhd" into library work
+Parsing entity <GeneRGB>.
+Parsing architecture <Behavioral> of entity <genergb>.
+Parsing VHDL file "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/reg1b.vhd" into library work
+Parsing entity <reg1b>.
+Parsing architecture <Behavioral> of entity <reg1b>.
+Parsing VHDL file "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/reg2b.vhd" into library work
+Parsing entity <reg2b>.
+Parsing architecture <Behavioral> of entity <reg2b>.
+Parsing VHDL file "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/prog_data.vhd" into library work
+Parsing package <prog_data_pkg>.
+Parsing VHDL file "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/RAM_Video.vhd" into library work
+Parsing entity <RAM_VIDEO>.
+Parsing architecture <Behavioral> of entity <ram_video>.
+Parsing VHDL file "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/VGA_bitmap.vhd" into library work
+Parsing entity <VGA>.
+Parsing architecture <Behavioral> of entity <vga>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <VGA> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <RAM_VIDEO> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <GeneRGB> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <reg2b> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <GeneSync> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <VGA>.
+    Related source file is "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/VGA_bitmap.vhd".
+    Summary:
+	inferred   3 Multiplexer(s).
+Unit <VGA> synthesized.
+
+Synthesizing Unit <RAM_VIDEO>.
+    Related source file is "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/RAM_Video.vhd".
+    Found 24-bit 38-to-1 multiplexer for signal <do> created at line 30.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <RAM_VIDEO> synthesized.
+
+Synthesizing Unit <GeneRGB>.
+    Related source file is "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/GeneRGB_bitmap.vhd".
+    Found 18-bit adder for signal <tmp_adr> created at line 32.
+    Found 8x9-bit multiplier for signal <PWR_9_o_Y[8]_MuLt_0_OUT> created at line 1405.
+    Found 6-bit 4-to-1 multiplexer for signal <mot> created at line 30.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplexer(s).
+Unit <GeneRGB> synthesized.
+
+Synthesizing Unit <reg2b>.
+    Related source file is "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/reg2b.vhd".
+    Found 2-bit register for signal <q>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <reg2b> synthesized.
+
+Synthesizing Unit <GeneSync>.
+    Related source file is "/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/vhd/GeneSync.vhd".
+    Found 10-bit register for signal <comptX>.
+    Found 2-bit register for signal <comptI>.
+    Found 9-bit register for signal <comptY>.
+    Found 2-bit register for signal <comptJ>.
+    Found 3-bit register for signal <comptCLK>.
+    Found 3-bit adder for signal <comptCLK[2]_GND_12_o_add_0_OUT> created at line 1241.
+    Found 2-bit adder for signal <comptI[1]_GND_12_o_add_1_OUT> created at line 1241.
+    Found 10-bit adder for signal <comptX[9]_GND_12_o_add_2_OUT> created at line 1241.
+    Found 2-bit adder for signal <comptJ[1]_GND_12_o_add_5_OUT> created at line 1241.
+    Found 9-bit adder for signal <comptY[8]_GND_12_o_add_6_OUT> created at line 1241.
+    Found 4x10-bit Read Only RAM for signal <comptI[1]_GND_12_o_wide_mux_21_OUT>
+    Found 4x9-bit Read Only RAM for signal <comptJ[1]_GND_12_o_wide_mux_23_OUT>
+    Found 10-bit comparator equal for signal <resX> created at line 98
+    Found 9-bit comparator equal for signal <resY> created at line 99
+    Summary:
+	inferred   2 RAM(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  26 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <GeneSync> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 4x10-bit single-port Read Only RAM                    : 1
+ 4x9-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 1
+ 9x8-bit multiplier                                    : 1
+# Adders/Subtractors                                   : 6
+ 10-bit adder                                          : 1
+ 18-bit adder                                          : 1
+ 2-bit adder                                           : 2
+ 3-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 6
+ 10-bit register                                       : 1
+ 2-bit register                                        : 3
+ 3-bit register                                        : 1
+ 9-bit register                                        : 1
+# Comparators                                          : 2
+ 10-bit comparator equal                               : 1
+ 9-bit comparator equal                                : 1
+# Multiplexers                                         : 5
+ 24-bit 38-to-1 multiplexer                            : 1
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 1
+ 6-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <GeneRGB>.
+	Multiplier <Mmult_PWR_9_o_Y[8]_MuLt_0_OUT> in block <GeneRGB> and adder/subtractor <Madd_tmp_adr_Madd> in block <GeneRGB> are combined into a MAC<Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT>.
+Unit <GeneRGB> synthesized (advanced).
+
+Synthesizing (advanced) Unit <GeneSync>.
+The following registers are absorbed into counter <comptCLK>: 1 register on signal <comptCLK>.
+The following registers are absorbed into counter <comptI>: 1 register on signal <comptI>.
+The following registers are absorbed into counter <comptJ>: 1 register on signal <comptJ>.
+The following registers are absorbed into counter <comptX>: 1 register on signal <comptX>.
+The following registers are absorbed into counter <comptY>: 1 register on signal <comptY>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_comptI[1]_GND_12_o_wide_mux_21_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 10-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <comptI>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_comptJ[1]_GND_12_o_wide_mux_23_OUT> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 9-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <comptJ>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <GeneSync> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 4x10-bit single-port distributed Read Only RAM        : 1
+ 4x9-bit single-port distributed Read Only RAM         : 1
+# MACs                                                 : 1
+ 9x8-to-17-bit MAC                                     : 1
+# Counters                                             : 5
+ 10-bit up counter                                     : 1
+ 2-bit up counter                                      : 2
+ 3-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 2
+ Flip-Flops                                            : 2
+# Comparators                                          : 2
+ 10-bit comparator equal                               : 1
+ 9-bit comparator equal                                : 1
+# Multiplexers                                         : 5
+ 24-bit 38-to-1 multiplexer                            : 1
+ 5-bit 2-to-1 multiplexer                              : 2
+ 6-bit 2-to-1 multiplexer                              : 1
+ 6-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance RAM0_0 in unit RAM0_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM0_1 in unit RAM0_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM0_2 in unit RAM0_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM1_0 in unit RAM1_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM1_1 in unit RAM1_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM1_2 in unit RAM1_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM2_0 in unit RAM2_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM2_1 in unit RAM2_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM2_2 in unit RAM2_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM3_0 in unit RAM3_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM3_1 in unit RAM3_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM3_2 in unit RAM3_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM4_0 in unit RAM4_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM4_1 in unit RAM4_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM4_2 in unit RAM4_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM5_0 in unit RAM5_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM5_1 in unit RAM5_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM5_2 in unit RAM5_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM6_0 in unit RAM6_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM6_1 in unit RAM6_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM6_2 in unit RAM6_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM7_0 in unit RAM7_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM7_1 in unit RAM7_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM7_2 in unit RAM7_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM8_0 in unit RAM8_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM8_1 in unit RAM8_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM8_2 in unit RAM8_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM9_0 in unit RAM9_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM9_1 in unit RAM9_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM9_2 in unit RAM9_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM10_0 in unit RAM10_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM10_1 in unit RAM10_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM10_2 in unit RAM10_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM11_0 in unit RAM11_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM11_1 in unit RAM11_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM11_2 in unit RAM11_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM12_0 in unit RAM12_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM12_1 in unit RAM12_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM12_2 in unit RAM12_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM13_0 in unit RAM13_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM13_1 in unit RAM13_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM13_2 in unit RAM13_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM14_0 in unit RAM14_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM14_1 in unit RAM14_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM14_2 in unit RAM14_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM15_0 in unit RAM15_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM15_1 in unit RAM15_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM15_2 in unit RAM15_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM16_0 in unit RAM16_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM16_1 in unit RAM16_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM16_2 in unit RAM16_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM17_0 in unit RAM17_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM17_1 in unit RAM17_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM17_2 in unit RAM17_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM18_0 in unit RAM18_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM18_1 in unit RAM18_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM18_2 in unit RAM18_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM19_0 in unit RAM19_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM19_1 in unit RAM19_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM19_2 in unit RAM19_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM20_0 in unit RAM20_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM20_1 in unit RAM20_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM20_2 in unit RAM20_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM21_0 in unit RAM21_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM21_1 in unit RAM21_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM21_2 in unit RAM21_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM22_0 in unit RAM22_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM22_1 in unit RAM22_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM22_2 in unit RAM22_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM23_0 in unit RAM23_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM23_1 in unit RAM23_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM23_2 in unit RAM23_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM24_0 in unit RAM24_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM24_1 in unit RAM24_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM24_2 in unit RAM24_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM25_0 in unit RAM25_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM25_1 in unit RAM25_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM25_2 in unit RAM25_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM26_0 in unit RAM26_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM26_1 in unit RAM26_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM26_2 in unit RAM26_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM27_0 in unit RAM27_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM27_1 in unit RAM27_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM27_2 in unit RAM27_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM28_0 in unit RAM28_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM28_1 in unit RAM28_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM28_2 in unit RAM28_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM29_0 in unit RAM29_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM29_1 in unit RAM29_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM29_2 in unit RAM29_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM30_0 in unit RAM30_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM30_1 in unit RAM30_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM30_2 in unit RAM30_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM31_0 in unit RAM31_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM31_1 in unit RAM31_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM31_2 in unit RAM31_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM32_0 in unit RAM32_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM32_1 in unit RAM32_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM32_2 in unit RAM32_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM33_0 in unit RAM33_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM33_1 in unit RAM33_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM33_2 in unit RAM33_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM34_0 in unit RAM34_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM34_1 in unit RAM34_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM34_2 in unit RAM34_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM35_0 in unit RAM35_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM35_1 in unit RAM35_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM35_2 in unit RAM35_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM36_0 in unit RAM36_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM36_1 in unit RAM36_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM36_2 in unit RAM36_2 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM37_0 in unit RAM37_0 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM37_1 in unit RAM37_1 of type RAMB16_S9 has been replaced by RAMB18E1
+INFO:Xst:1901 - Instance RAM37_2 in unit RAM37_2 of type RAMB16_S9 has been replaced by RAMB18E1
+
+Optimizing unit <VGA> ...
+
+Optimizing unit <RAM_VIDEO> ...
+
+Optimizing unit <GeneSync> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block VGA, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : VGA_bitmap.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 778
+#      GND                         : 115
+#      INV                         : 5
+#      LUT1                        : 27
+#      LUT2                        : 15
+#      LUT3                        : 32
+#      LUT4                        : 2
+#      LUT5                        : 4
+#      LUT6                        : 314
+#      MUXCY                       : 37
+#      MUXF7                       : 48
+#      MUXF8                       : 24
+#      VCC                         : 115
+#      XORCY                       : 40
+# FlipFlops/Latches                : 28
+#      FD                          : 2
+#      FDE                         : 4
+#      FDR                         : 3
+#      FDRE                        : 19
+# RAMS                             : 114
+#      RAMB18E1                    : 114
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      OBUF                        : 18
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7z010clg400-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              28  out of  35200     0%  
+ Number of Slice LUTs:                  399  out of  17600     2%  
+    Number used as Logic:               399  out of  17600     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    427
+   Number with an unused Flip Flop:     399  out of    427    93%  
+   Number with an unused LUT:            28  out of    427     6%  
+   Number of fully used LUT-FF pairs:     0  out of    427     0%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    100    19%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               57  out of     60    95%  
+    Number using Block RAM only:         57
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)           | Load  |
+-----------------------------------+---------------------------------+-------+
+CLK                                | BUFGP                           | 142   |
+cRAM_VIDEO/RAM37_2/N0              | NONE(cRAM_VIDEO/RAM37_2/RAM37_2)| 1     |
+cRAM_VIDEO/RAM37_1/N0              | NONE(cRAM_VIDEO/RAM37_1/RAM37_1)| 1     |
+cRAM_VIDEO/RAM37_0/N0              | NONE(cRAM_VIDEO/RAM37_0/RAM37_0)| 1     |
+cRAM_VIDEO/RAM36_2/N0              | NONE(cRAM_VIDEO/RAM36_2/RAM36_2)| 1     |
+cRAM_VIDEO/RAM36_1/N0              | NONE(cRAM_VIDEO/RAM36_1/RAM36_1)| 1     |
+cRAM_VIDEO/RAM36_0/N0              | NONE(cRAM_VIDEO/RAM36_0/RAM36_0)| 1     |
+cRAM_VIDEO/RAM35_2/N0              | NONE(cRAM_VIDEO/RAM35_2/RAM35_2)| 1     |
+cRAM_VIDEO/RAM35_1/N0              | NONE(cRAM_VIDEO/RAM35_1/RAM35_1)| 1     |
+cRAM_VIDEO/RAM35_0/N0              | NONE(cRAM_VIDEO/RAM35_0/RAM35_0)| 1     |
+cRAM_VIDEO/RAM34_2/N0              | NONE(cRAM_VIDEO/RAM34_2/RAM34_2)| 1     |
+cRAM_VIDEO/RAM34_1/N0              | NONE(cRAM_VIDEO/RAM34_1/RAM34_1)| 1     |
+cRAM_VIDEO/RAM34_0/N0              | NONE(cRAM_VIDEO/RAM34_0/RAM34_0)| 1     |
+cRAM_VIDEO/RAM33_2/N0              | NONE(cRAM_VIDEO/RAM33_2/RAM33_2)| 1     |
+cRAM_VIDEO/RAM33_1/N0              | NONE(cRAM_VIDEO/RAM33_1/RAM33_1)| 1     |
+cRAM_VIDEO/RAM33_0/N0              | NONE(cRAM_VIDEO/RAM33_0/RAM33_0)| 1     |
+cRAM_VIDEO/RAM32_2/N0              | NONE(cRAM_VIDEO/RAM32_2/RAM32_2)| 1     |
+cRAM_VIDEO/RAM32_1/N0              | NONE(cRAM_VIDEO/RAM32_1/RAM32_1)| 1     |
+cRAM_VIDEO/RAM32_0/N0              | NONE(cRAM_VIDEO/RAM32_0/RAM32_0)| 1     |
+cRAM_VIDEO/RAM31_2/N0              | NONE(cRAM_VIDEO/RAM31_2/RAM31_2)| 1     |
+cRAM_VIDEO/RAM31_1/N0              | NONE(cRAM_VIDEO/RAM31_1/RAM31_1)| 1     |
+cRAM_VIDEO/RAM31_0/N0              | NONE(cRAM_VIDEO/RAM31_0/RAM31_0)| 1     |
+cRAM_VIDEO/RAM30_2/N0              | NONE(cRAM_VIDEO/RAM30_2/RAM30_2)| 1     |
+cRAM_VIDEO/RAM30_1/N0              | NONE(cRAM_VIDEO/RAM30_1/RAM30_1)| 1     |
+cRAM_VIDEO/RAM30_0/N0              | NONE(cRAM_VIDEO/RAM30_0/RAM30_0)| 1     |
+cRAM_VIDEO/RAM29_2/N0              | NONE(cRAM_VIDEO/RAM29_2/RAM29_2)| 1     |
+cRAM_VIDEO/RAM29_1/N0              | NONE(cRAM_VIDEO/RAM29_1/RAM29_1)| 1     |
+cRAM_VIDEO/RAM29_0/N0              | NONE(cRAM_VIDEO/RAM29_0/RAM29_0)| 1     |
+cRAM_VIDEO/RAM28_2/N0              | NONE(cRAM_VIDEO/RAM28_2/RAM28_2)| 1     |
+cRAM_VIDEO/RAM28_1/N0              | NONE(cRAM_VIDEO/RAM28_1/RAM28_1)| 1     |
+cRAM_VIDEO/RAM28_0/N0              | NONE(cRAM_VIDEO/RAM28_0/RAM28_0)| 1     |
+cRAM_VIDEO/RAM27_2/N0              | NONE(cRAM_VIDEO/RAM27_2/RAM27_2)| 1     |
+cRAM_VIDEO/RAM27_1/N0              | NONE(cRAM_VIDEO/RAM27_1/RAM27_1)| 1     |
+cRAM_VIDEO/RAM27_0/N0              | NONE(cRAM_VIDEO/RAM27_0/RAM27_0)| 1     |
+cRAM_VIDEO/RAM26_2/N0              | NONE(cRAM_VIDEO/RAM26_2/RAM26_2)| 1     |
+cRAM_VIDEO/RAM26_1/N0              | NONE(cRAM_VIDEO/RAM26_1/RAM26_1)| 1     |
+cRAM_VIDEO/RAM26_0/N0              | NONE(cRAM_VIDEO/RAM26_0/RAM26_0)| 1     |
+cRAM_VIDEO/RAM25_2/N0              | NONE(cRAM_VIDEO/RAM25_2/RAM25_2)| 1     |
+cRAM_VIDEO/RAM25_1/N0              | NONE(cRAM_VIDEO/RAM25_1/RAM25_1)| 1     |
+cRAM_VIDEO/RAM25_0/N0              | NONE(cRAM_VIDEO/RAM25_0/RAM25_0)| 1     |
+cRAM_VIDEO/RAM24_2/N0              | NONE(cRAM_VIDEO/RAM24_2/RAM24_2)| 1     |
+cRAM_VIDEO/RAM24_1/N0              | NONE(cRAM_VIDEO/RAM24_1/RAM24_1)| 1     |
+cRAM_VIDEO/RAM24_0/N0              | NONE(cRAM_VIDEO/RAM24_0/RAM24_0)| 1     |
+cRAM_VIDEO/RAM23_2/N0              | NONE(cRAM_VIDEO/RAM23_2/RAM23_2)| 1     |
+cRAM_VIDEO/RAM23_1/N0              | NONE(cRAM_VIDEO/RAM23_1/RAM23_1)| 1     |
+cRAM_VIDEO/RAM23_0/N0              | NONE(cRAM_VIDEO/RAM23_0/RAM23_0)| 1     |
+cRAM_VIDEO/RAM22_2/N0              | NONE(cRAM_VIDEO/RAM22_2/RAM22_2)| 1     |
+cRAM_VIDEO/RAM22_1/N0              | NONE(cRAM_VIDEO/RAM22_1/RAM22_1)| 1     |
+cRAM_VIDEO/RAM22_0/N0              | NONE(cRAM_VIDEO/RAM22_0/RAM22_0)| 1     |
+cRAM_VIDEO/RAM21_2/N0              | NONE(cRAM_VIDEO/RAM21_2/RAM21_2)| 1     |
+cRAM_VIDEO/RAM21_1/N0              | NONE(cRAM_VIDEO/RAM21_1/RAM21_1)| 1     |
+cRAM_VIDEO/RAM21_0/N0              | NONE(cRAM_VIDEO/RAM21_0/RAM21_0)| 1     |
+cRAM_VIDEO/RAM20_2/N0              | NONE(cRAM_VIDEO/RAM20_2/RAM20_2)| 1     |
+cRAM_VIDEO/RAM20_1/N0              | NONE(cRAM_VIDEO/RAM20_1/RAM20_1)| 1     |
+cRAM_VIDEO/RAM20_0/N0              | NONE(cRAM_VIDEO/RAM20_0/RAM20_0)| 1     |
+cRAM_VIDEO/RAM19_2/N0              | NONE(cRAM_VIDEO/RAM19_2/RAM19_2)| 1     |
+cRAM_VIDEO/RAM19_1/N0              | NONE(cRAM_VIDEO/RAM19_1/RAM19_1)| 1     |
+cRAM_VIDEO/RAM19_0/N0              | NONE(cRAM_VIDEO/RAM19_0/RAM19_0)| 1     |
+cRAM_VIDEO/RAM18_2/N0              | NONE(cRAM_VIDEO/RAM18_2/RAM18_2)| 1     |
+cRAM_VIDEO/RAM18_1/N0              | NONE(cRAM_VIDEO/RAM18_1/RAM18_1)| 1     |
+cRAM_VIDEO/RAM18_0/N0              | NONE(cRAM_VIDEO/RAM18_0/RAM18_0)| 1     |
+cRAM_VIDEO/RAM17_2/N0              | NONE(cRAM_VIDEO/RAM17_2/RAM17_2)| 1     |
+cRAM_VIDEO/RAM17_1/N0              | NONE(cRAM_VIDEO/RAM17_1/RAM17_1)| 1     |
+cRAM_VIDEO/RAM17_0/N0              | NONE(cRAM_VIDEO/RAM17_0/RAM17_0)| 1     |
+cRAM_VIDEO/RAM16_2/N0              | NONE(cRAM_VIDEO/RAM16_2/RAM16_2)| 1     |
+cRAM_VIDEO/RAM16_1/N0              | NONE(cRAM_VIDEO/RAM16_1/RAM16_1)| 1     |
+cRAM_VIDEO/RAM16_0/N0              | NONE(cRAM_VIDEO/RAM16_0/RAM16_0)| 1     |
+cRAM_VIDEO/RAM15_2/N0              | NONE(cRAM_VIDEO/RAM15_2/RAM15_2)| 1     |
+cRAM_VIDEO/RAM15_1/N0              | NONE(cRAM_VIDEO/RAM15_1/RAM15_1)| 1     |
+cRAM_VIDEO/RAM15_0/N0              | NONE(cRAM_VIDEO/RAM15_0/RAM15_0)| 1     |
+cRAM_VIDEO/RAM14_2/N0              | NONE(cRAM_VIDEO/RAM14_2/RAM14_2)| 1     |
+cRAM_VIDEO/RAM14_1/N0              | NONE(cRAM_VIDEO/RAM14_1/RAM14_1)| 1     |
+cRAM_VIDEO/RAM14_0/N0              | NONE(cRAM_VIDEO/RAM14_0/RAM14_0)| 1     |
+cRAM_VIDEO/RAM13_2/N0              | NONE(cRAM_VIDEO/RAM13_2/RAM13_2)| 1     |
+cRAM_VIDEO/RAM13_1/N0              | NONE(cRAM_VIDEO/RAM13_1/RAM13_1)| 1     |
+cRAM_VIDEO/RAM13_0/N0              | NONE(cRAM_VIDEO/RAM13_0/RAM13_0)| 1     |
+cRAM_VIDEO/RAM12_2/N0              | NONE(cRAM_VIDEO/RAM12_2/RAM12_2)| 1     |
+cRAM_VIDEO/RAM12_1/N0              | NONE(cRAM_VIDEO/RAM12_1/RAM12_1)| 1     |
+cRAM_VIDEO/RAM12_0/N0              | NONE(cRAM_VIDEO/RAM12_0/RAM12_0)| 1     |
+cRAM_VIDEO/RAM11_2/N0              | NONE(cRAM_VIDEO/RAM11_2/RAM11_2)| 1     |
+cRAM_VIDEO/RAM11_1/N0              | NONE(cRAM_VIDEO/RAM11_1/RAM11_1)| 1     |
+cRAM_VIDEO/RAM11_0/N0              | NONE(cRAM_VIDEO/RAM11_0/RAM11_0)| 1     |
+cRAM_VIDEO/RAM10_2/N0              | NONE(cRAM_VIDEO/RAM10_2/RAM10_2)| 1     |
+cRAM_VIDEO/RAM10_1/N0              | NONE(cRAM_VIDEO/RAM10_1/RAM10_1)| 1     |
+cRAM_VIDEO/RAM10_0/N0              | NONE(cRAM_VIDEO/RAM10_0/RAM10_0)| 1     |
+cRAM_VIDEO/RAM9_2/N0               | NONE(cRAM_VIDEO/RAM9_2/RAM9_2)  | 1     |
+cRAM_VIDEO/RAM9_1/N0               | NONE(cRAM_VIDEO/RAM9_1/RAM9_1)  | 1     |
+cRAM_VIDEO/RAM9_0/N0               | NONE(cRAM_VIDEO/RAM9_0/RAM9_0)  | 1     |
+cRAM_VIDEO/RAM8_2/N0               | NONE(cRAM_VIDEO/RAM8_2/RAM8_2)  | 1     |
+cRAM_VIDEO/RAM8_1/N0               | NONE(cRAM_VIDEO/RAM8_1/RAM8_1)  | 1     |
+cRAM_VIDEO/RAM8_0/N0               | NONE(cRAM_VIDEO/RAM8_0/RAM8_0)  | 1     |
+cRAM_VIDEO/RAM7_2/N0               | NONE(cRAM_VIDEO/RAM7_2/RAM7_2)  | 1     |
+cRAM_VIDEO/RAM7_1/N0               | NONE(cRAM_VIDEO/RAM7_1/RAM7_1)  | 1     |
+cRAM_VIDEO/RAM7_0/N0               | NONE(cRAM_VIDEO/RAM7_0/RAM7_0)  | 1     |
+cRAM_VIDEO/RAM6_2/N0               | NONE(cRAM_VIDEO/RAM6_2/RAM6_2)  | 1     |
+cRAM_VIDEO/RAM6_1/N0               | NONE(cRAM_VIDEO/RAM6_1/RAM6_1)  | 1     |
+cRAM_VIDEO/RAM6_0/N0               | NONE(cRAM_VIDEO/RAM6_0/RAM6_0)  | 1     |
+cRAM_VIDEO/RAM5_2/N0               | NONE(cRAM_VIDEO/RAM5_2/RAM5_2)  | 1     |
+cRAM_VIDEO/RAM5_1/N0               | NONE(cRAM_VIDEO/RAM5_1/RAM5_1)  | 1     |
+cRAM_VIDEO/RAM5_0/N0               | NONE(cRAM_VIDEO/RAM5_0/RAM5_0)  | 1     |
+cRAM_VIDEO/RAM4_2/N0               | NONE(cRAM_VIDEO/RAM4_2/RAM4_2)  | 1     |
+cRAM_VIDEO/RAM4_1/N0               | NONE(cRAM_VIDEO/RAM4_1/RAM4_1)  | 1     |
+cRAM_VIDEO/RAM4_0/N0               | NONE(cRAM_VIDEO/RAM4_0/RAM4_0)  | 1     |
+cRAM_VIDEO/RAM3_2/N0               | NONE(cRAM_VIDEO/RAM3_2/RAM3_2)  | 1     |
+cRAM_VIDEO/RAM3_1/N0               | NONE(cRAM_VIDEO/RAM3_1/RAM3_1)  | 1     |
+cRAM_VIDEO/RAM3_0/N0               | NONE(cRAM_VIDEO/RAM3_0/RAM3_0)  | 1     |
+cRAM_VIDEO/RAM2_2/N0               | NONE(cRAM_VIDEO/RAM2_2/RAM2_2)  | 1     |
+cRAM_VIDEO/RAM2_1/N0               | NONE(cRAM_VIDEO/RAM2_1/RAM2_1)  | 1     |
+cRAM_VIDEO/RAM2_0/N0               | NONE(cRAM_VIDEO/RAM2_0/RAM2_0)  | 1     |
+cRAM_VIDEO/RAM1_2/N0               | NONE(cRAM_VIDEO/RAM1_2/RAM1_2)  | 1     |
+cRAM_VIDEO/RAM1_1/N0               | NONE(cRAM_VIDEO/RAM1_1/RAM1_1)  | 1     |
+cRAM_VIDEO/RAM1_0/N0               | NONE(cRAM_VIDEO/RAM1_0/RAM1_0)  | 1     |
+cRAM_VIDEO/RAM0_2/N0               | NONE(cRAM_VIDEO/RAM0_2/RAM0_2)  | 1     |
+cRAM_VIDEO/RAM0_1/N0               | NONE(cRAM_VIDEO/RAM0_1/RAM0_1)  | 1     |
+cRAM_VIDEO/RAM0_0/N0               | NONE(cRAM_VIDEO/RAM0_0/RAM0_0)  | 1     |
+-----------------------------------+---------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+FindSrcOfAsyncThruGates : 100 (1)
+FindSrcOfAsyncThruGates : 200 (1)
+---------------------------------------------------+---------------------------------+-------+
+Control Signal                                     | Buffer(FF name)                 | Load  |
+---------------------------------------------------+---------------------------------+-------+
+cRAM_VIDEO/RAM0_0/N0(cRAM_VIDEO/RAM0_0/XST_GND:G)  | NONE(cRAM_VIDEO/RAM0_0/RAM0_0)  | 12    |
+cRAM_VIDEO/RAM0_1/N0(cRAM_VIDEO/RAM0_1/XST_GND:G)  | NONE(cRAM_VIDEO/RAM0_1/RAM0_1)  | 12    |
+cRAM_VIDEO/RAM0_2/N0(cRAM_VIDEO/RAM0_2/XST_GND:G)  | NONE(cRAM_VIDEO/RAM0_2/RAM0_2)  | 12    |
+cRAM_VIDEO/RAM10_0/N0(cRAM_VIDEO/RAM10_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM10_0/RAM10_0)| 12    |
+cRAM_VIDEO/RAM10_1/N0(cRAM_VIDEO/RAM10_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM10_1/RAM10_1)| 12    |
+cRAM_VIDEO/RAM10_2/N0(cRAM_VIDEO/RAM10_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM10_2/RAM10_2)| 12    |
+cRAM_VIDEO/RAM11_0/N0(cRAM_VIDEO/RAM11_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM11_0/RAM11_0)| 12    |
+cRAM_VIDEO/RAM11_1/N0(cRAM_VIDEO/RAM11_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM11_1/RAM11_1)| 12    |
+cRAM_VIDEO/RAM11_2/N0(cRAM_VIDEO/RAM11_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM11_2/RAM11_2)| 12    |
+cRAM_VIDEO/RAM12_0/N0(cRAM_VIDEO/RAM12_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM12_0/RAM12_0)| 12    |
+cRAM_VIDEO/RAM12_1/N0(cRAM_VIDEO/RAM12_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM12_1/RAM12_1)| 12    |
+cRAM_VIDEO/RAM12_2/N0(cRAM_VIDEO/RAM12_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM12_2/RAM12_2)| 12    |
+cRAM_VIDEO/RAM13_0/N0(cRAM_VIDEO/RAM13_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM13_0/RAM13_0)| 12    |
+cRAM_VIDEO/RAM13_1/N0(cRAM_VIDEO/RAM13_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM13_1/RAM13_1)| 12    |
+cRAM_VIDEO/RAM13_2/N0(cRAM_VIDEO/RAM13_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM13_2/RAM13_2)| 12    |
+cRAM_VIDEO/RAM14_0/N0(cRAM_VIDEO/RAM14_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM14_0/RAM14_0)| 12    |
+cRAM_VIDEO/RAM14_1/N0(cRAM_VIDEO/RAM14_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM14_1/RAM14_1)| 12    |
+cRAM_VIDEO/RAM14_2/N0(cRAM_VIDEO/RAM14_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM14_2/RAM14_2)| 12    |
+cRAM_VIDEO/RAM15_0/N0(cRAM_VIDEO/RAM15_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM15_0/RAM15_0)| 12    |
+cRAM_VIDEO/RAM15_1/N0(cRAM_VIDEO/RAM15_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM15_1/RAM15_1)| 12    |
+cRAM_VIDEO/RAM15_2/N0(cRAM_VIDEO/RAM15_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM15_2/RAM15_2)| 12    |
+cRAM_VIDEO/RAM16_0/N0(cRAM_VIDEO/RAM16_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM16_0/RAM16_0)| 12    |
+cRAM_VIDEO/RAM16_1/N0(cRAM_VIDEO/RAM16_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM16_1/RAM16_1)| 12    |
+cRAM_VIDEO/RAM16_2/N0(cRAM_VIDEO/RAM16_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM16_2/RAM16_2)| 12    |
+cRAM_VIDEO/RAM17_0/N0(cRAM_VIDEO/RAM17_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM17_0/RAM17_0)| 12    |
+cRAM_VIDEO/RAM17_1/N0(cRAM_VIDEO/RAM17_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM17_1/RAM17_1)| 12    |
+cRAM_VIDEO/RAM17_2/N0(cRAM_VIDEO/RAM17_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM17_2/RAM17_2)| 12    |
+cRAM_VIDEO/RAM18_0/N0(cRAM_VIDEO/RAM18_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM18_0/RAM18_0)| 12    |
+cRAM_VIDEO/RAM18_1/N0(cRAM_VIDEO/RAM18_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM18_1/RAM18_1)| 12    |
+cRAM_VIDEO/RAM18_2/N0(cRAM_VIDEO/RAM18_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM18_2/RAM18_2)| 12    |
+cRAM_VIDEO/RAM19_0/N0(cRAM_VIDEO/RAM19_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM19_0/RAM19_0)| 12    |
+cRAM_VIDEO/RAM19_1/N0(cRAM_VIDEO/RAM19_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM19_1/RAM19_1)| 12    |
+cRAM_VIDEO/RAM19_2/N0(cRAM_VIDEO/RAM19_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM19_2/RAM19_2)| 12    |
+cRAM_VIDEO/RAM1_0/N0(cRAM_VIDEO/RAM1_0/XST_GND:G)  | NONE(cRAM_VIDEO/RAM1_0/RAM1_0)  | 12    |
+cRAM_VIDEO/RAM1_1/N0(cRAM_VIDEO/RAM1_1/XST_GND:G)  | NONE(cRAM_VIDEO/RAM1_1/RAM1_1)  | 12    |
+cRAM_VIDEO/RAM1_2/N0(cRAM_VIDEO/RAM1_2/XST_GND:G)  | NONE(cRAM_VIDEO/RAM1_2/RAM1_2)  | 12    |
+cRAM_VIDEO/RAM20_0/N0(cRAM_VIDEO/RAM20_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM20_0/RAM20_0)| 12    |
+cRAM_VIDEO/RAM20_1/N0(cRAM_VIDEO/RAM20_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM20_1/RAM20_1)| 12    |
+cRAM_VIDEO/RAM20_2/N0(cRAM_VIDEO/RAM20_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM20_2/RAM20_2)| 12    |
+cRAM_VIDEO/RAM21_0/N0(cRAM_VIDEO/RAM21_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM21_0/RAM21_0)| 12    |
+cRAM_VIDEO/RAM21_1/N0(cRAM_VIDEO/RAM21_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM21_1/RAM21_1)| 12    |
+cRAM_VIDEO/RAM21_2/N0(cRAM_VIDEO/RAM21_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM21_2/RAM21_2)| 12    |
+cRAM_VIDEO/RAM22_0/N0(cRAM_VIDEO/RAM22_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM22_0/RAM22_0)| 12    |
+cRAM_VIDEO/RAM22_1/N0(cRAM_VIDEO/RAM22_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM22_1/RAM22_1)| 12    |
+cRAM_VIDEO/RAM22_2/N0(cRAM_VIDEO/RAM22_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM22_2/RAM22_2)| 12    |
+cRAM_VIDEO/RAM23_0/N0(cRAM_VIDEO/RAM23_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM23_0/RAM23_0)| 12    |
+cRAM_VIDEO/RAM23_1/N0(cRAM_VIDEO/RAM23_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM23_1/RAM23_1)| 12    |
+cRAM_VIDEO/RAM23_2/N0(cRAM_VIDEO/RAM23_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM23_2/RAM23_2)| 12    |
+cRAM_VIDEO/RAM24_0/N0(cRAM_VIDEO/RAM24_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM24_0/RAM24_0)| 12    |
+cRAM_VIDEO/RAM24_1/N0(cRAM_VIDEO/RAM24_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM24_1/RAM24_1)| 12    |
+cRAM_VIDEO/RAM24_2/N0(cRAM_VIDEO/RAM24_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM24_2/RAM24_2)| 12    |
+cRAM_VIDEO/RAM25_0/N0(cRAM_VIDEO/RAM25_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM25_0/RAM25_0)| 12    |
+cRAM_VIDEO/RAM25_1/N0(cRAM_VIDEO/RAM25_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM25_1/RAM25_1)| 12    |
+cRAM_VIDEO/RAM25_2/N0(cRAM_VIDEO/RAM25_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM25_2/RAM25_2)| 12    |
+cRAM_VIDEO/RAM26_0/N0(cRAM_VIDEO/RAM26_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM26_0/RAM26_0)| 12    |
+cRAM_VIDEO/RAM26_1/N0(cRAM_VIDEO/RAM26_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM26_1/RAM26_1)| 12    |
+cRAM_VIDEO/RAM26_2/N0(cRAM_VIDEO/RAM26_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM26_2/RAM26_2)| 12    |
+cRAM_VIDEO/RAM27_0/N0(cRAM_VIDEO/RAM27_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM27_0/RAM27_0)| 12    |
+cRAM_VIDEO/RAM27_1/N0(cRAM_VIDEO/RAM27_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM27_1/RAM27_1)| 12    |
+cRAM_VIDEO/RAM27_2/N0(cRAM_VIDEO/RAM27_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM27_2/RAM27_2)| 12    |
+cRAM_VIDEO/RAM28_0/N0(cRAM_VIDEO/RAM28_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM28_0/RAM28_0)| 12    |
+cRAM_VIDEO/RAM28_1/N0(cRAM_VIDEO/RAM28_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM28_1/RAM28_1)| 12    |
+cRAM_VIDEO/RAM28_2/N0(cRAM_VIDEO/RAM28_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM28_2/RAM28_2)| 12    |
+cRAM_VIDEO/RAM29_0/N0(cRAM_VIDEO/RAM29_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM29_0/RAM29_0)| 12    |
+cRAM_VIDEO/RAM29_1/N0(cRAM_VIDEO/RAM29_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM29_1/RAM29_1)| 12    |
+cRAM_VIDEO/RAM29_2/N0(cRAM_VIDEO/RAM29_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM29_2/RAM29_2)| 12    |
+cRAM_VIDEO/RAM2_0/N0(cRAM_VIDEO/RAM2_0/XST_GND:G)  | NONE(cRAM_VIDEO/RAM2_0/RAM2_0)  | 12    |
+cRAM_VIDEO/RAM2_1/N0(cRAM_VIDEO/RAM2_1/XST_GND:G)  | NONE(cRAM_VIDEO/RAM2_1/RAM2_1)  | 12    |
+cRAM_VIDEO/RAM2_2/N0(cRAM_VIDEO/RAM2_2/XST_GND:G)  | NONE(cRAM_VIDEO/RAM2_2/RAM2_2)  | 12    |
+cRAM_VIDEO/RAM30_0/N0(cRAM_VIDEO/RAM30_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM30_0/RAM30_0)| 12    |
+cRAM_VIDEO/RAM30_1/N0(cRAM_VIDEO/RAM30_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM30_1/RAM30_1)| 12    |
+cRAM_VIDEO/RAM30_2/N0(cRAM_VIDEO/RAM30_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM30_2/RAM30_2)| 12    |
+cRAM_VIDEO/RAM31_0/N0(cRAM_VIDEO/RAM31_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM31_0/RAM31_0)| 12    |
+cRAM_VIDEO/RAM31_1/N0(cRAM_VIDEO/RAM31_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM31_1/RAM31_1)| 12    |
+cRAM_VIDEO/RAM31_2/N0(cRAM_VIDEO/RAM31_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM31_2/RAM31_2)| 12    |
+cRAM_VIDEO/RAM32_0/N0(cRAM_VIDEO/RAM32_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM32_0/RAM32_0)| 12    |
+cRAM_VIDEO/RAM32_1/N0(cRAM_VIDEO/RAM32_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM32_1/RAM32_1)| 12    |
+cRAM_VIDEO/RAM32_2/N0(cRAM_VIDEO/RAM32_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM32_2/RAM32_2)| 12    |
+cRAM_VIDEO/RAM33_0/N0(cRAM_VIDEO/RAM33_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM33_0/RAM33_0)| 12    |
+cRAM_VIDEO/RAM33_1/N0(cRAM_VIDEO/RAM33_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM33_1/RAM33_1)| 12    |
+cRAM_VIDEO/RAM33_2/N0(cRAM_VIDEO/RAM33_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM33_2/RAM33_2)| 12    |
+cRAM_VIDEO/RAM34_0/N0(cRAM_VIDEO/RAM34_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM34_0/RAM34_0)| 12    |
+cRAM_VIDEO/RAM34_1/N0(cRAM_VIDEO/RAM34_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM34_1/RAM34_1)| 12    |
+cRAM_VIDEO/RAM34_2/N0(cRAM_VIDEO/RAM34_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM34_2/RAM34_2)| 12    |
+cRAM_VIDEO/RAM35_0/N0(cRAM_VIDEO/RAM35_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM35_0/RAM35_0)| 12    |
+cRAM_VIDEO/RAM35_1/N0(cRAM_VIDEO/RAM35_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM35_1/RAM35_1)| 12    |
+cRAM_VIDEO/RAM35_2/N0(cRAM_VIDEO/RAM35_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM35_2/RAM35_2)| 12    |
+cRAM_VIDEO/RAM36_0/N0(cRAM_VIDEO/RAM36_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM36_0/RAM36_0)| 12    |
+cRAM_VIDEO/RAM36_1/N0(cRAM_VIDEO/RAM36_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM36_1/RAM36_1)| 12    |
+cRAM_VIDEO/RAM36_2/N0(cRAM_VIDEO/RAM36_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM36_2/RAM36_2)| 12    |
+cRAM_VIDEO/RAM37_0/N0(cRAM_VIDEO/RAM37_0/XST_GND:G)| NONE(cRAM_VIDEO/RAM37_0/RAM37_0)| 12    |
+cRAM_VIDEO/RAM37_1/N0(cRAM_VIDEO/RAM37_1/XST_GND:G)| NONE(cRAM_VIDEO/RAM37_1/RAM37_1)| 12    |
+cRAM_VIDEO/RAM37_2/N0(cRAM_VIDEO/RAM37_2/XST_GND:G)| NONE(cRAM_VIDEO/RAM37_2/RAM37_2)| 12    |
+cRAM_VIDEO/RAM3_0/N0(cRAM_VIDEO/RAM3_0/XST_GND:G)  | NONE(cRAM_VIDEO/RAM3_0/RAM3_0)  | 12    |
+cRAM_VIDEO/RAM3_1/N0(cRAM_VIDEO/RAM3_1/XST_GND:G)  | NONE(cRAM_VIDEO/RAM3_1/RAM3_1)  | 12    |
+cRAM_VIDEO/RAM3_2/N0(cRAM_VIDEO/RAM3_2/XST_GND:G)  | NONE(cRAM_VIDEO/RAM3_2/RAM3_2)  | 12    |
+cRAM_VIDEO/RAM4_0/N0(cRAM_VIDEO/RAM4_0/XST_GND:G)  | NONE(cRAM_VIDEO/RAM4_0/RAM4_0)  | 12    |
+cRAM_VIDEO/RAM4_1/N0(cRAM_VIDEO/RAM4_1/XST_GND:G)  | NONE(cRAM_VIDEO/RAM4_1/RAM4_1)  | 12    |
+cRAM_VIDEO/RAM4_2/N0(cRAM_VIDEO/RAM4_2/XST_GND:G)  | NONE(cRAM_VIDEO/RAM4_2/RAM4_2)  | 12    |
+cRAM_VIDEO/RAM5_0/N0(cRAM_VIDEO/RAM5_0/XST_GND:G)  | NONE(cRAM_VIDEO/RAM5_0/RAM5_0)  | 12    |
+cRAM_VIDEO/RAM5_1/N0(cRAM_VIDEO/RAM5_1/XST_GND:G)  | NONE(cRAM_VIDEO/RAM5_1/RAM5_1)  | 12    |
+cRAM_VIDEO/RAM5_2/N0(cRAM_VIDEO/RAM5_2/XST_GND:G)  | NONE(cRAM_VIDEO/RAM5_2/RAM5_2)  | 12    |
+cRAM_VIDEO/RAM6_0/N0(cRAM_VIDEO/RAM6_0/XST_GND:G)  | NONE(cRAM_VIDEO/RAM6_0/RAM6_0)  | 12    |
+cRAM_VIDEO/RAM6_1/N0(cRAM_VIDEO/RAM6_1/XST_GND:G)  | NONE(cRAM_VIDEO/RAM6_1/RAM6_1)  | 12    |
+cRAM_VIDEO/RAM6_2/N0(cRAM_VIDEO/RAM6_2/XST_GND:G)  | NONE(cRAM_VIDEO/RAM6_2/RAM6_2)  | 12    |
+cRAM_VIDEO/RAM7_0/N0(cRAM_VIDEO/RAM7_0/XST_GND:G)  | NONE(cRAM_VIDEO/RAM7_0/RAM7_0)  | 12    |
+cRAM_VIDEO/RAM7_1/N0(cRAM_VIDEO/RAM7_1/XST_GND:G)  | NONE(cRAM_VIDEO/RAM7_1/RAM7_1)  | 12    |
+cRAM_VIDEO/RAM7_2/N0(cRAM_VIDEO/RAM7_2/XST_GND:G)  | NONE(cRAM_VIDEO/RAM7_2/RAM7_2)  | 12    |
+cRAM_VIDEO/RAM8_0/N0(cRAM_VIDEO/RAM8_0/XST_GND:G)  | NONE(cRAM_VIDEO/RAM8_0/RAM8_0)  | 12    |
+cRAM_VIDEO/RAM8_1/N0(cRAM_VIDEO/RAM8_1/XST_GND:G)  | NONE(cRAM_VIDEO/RAM8_1/RAM8_1)  | 12    |
+cRAM_VIDEO/RAM8_2/N0(cRAM_VIDEO/RAM8_2/XST_GND:G)  | NONE(cRAM_VIDEO/RAM8_2/RAM8_2)  | 12    |
+cRAM_VIDEO/RAM9_0/N0(cRAM_VIDEO/RAM9_0/XST_GND:G)  | NONE(cRAM_VIDEO/RAM9_0/RAM9_0)  | 12    |
+cRAM_VIDEO/RAM9_1/N0(cRAM_VIDEO/RAM9_1/XST_GND:G)  | NONE(cRAM_VIDEO/RAM9_1/RAM9_1)  | 12    |
+cRAM_VIDEO/RAM9_2/N0(cRAM_VIDEO/RAM9_2/XST_GND:G)  | NONE(cRAM_VIDEO/RAM9_2/RAM9_2)  | 12    |
+cRAM_VIDEO/RAM0_0/N1(cRAM_VIDEO/RAM0_0/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM0_0/RAM0_0)  | 8     |
+cRAM_VIDEO/RAM0_1/N1(cRAM_VIDEO/RAM0_1/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM0_1/RAM0_1)  | 8     |
+cRAM_VIDEO/RAM0_2/N1(cRAM_VIDEO/RAM0_2/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM0_2/RAM0_2)  | 8     |
+cRAM_VIDEO/RAM10_0/N1(cRAM_VIDEO/RAM10_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM10_0/RAM10_0)| 8     |
+cRAM_VIDEO/RAM10_1/N1(cRAM_VIDEO/RAM10_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM10_1/RAM10_1)| 8     |
+cRAM_VIDEO/RAM10_2/N1(cRAM_VIDEO/RAM10_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM10_2/RAM10_2)| 8     |
+cRAM_VIDEO/RAM11_0/N1(cRAM_VIDEO/RAM11_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM11_0/RAM11_0)| 8     |
+cRAM_VIDEO/RAM11_1/N1(cRAM_VIDEO/RAM11_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM11_1/RAM11_1)| 8     |
+cRAM_VIDEO/RAM11_2/N1(cRAM_VIDEO/RAM11_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM11_2/RAM11_2)| 8     |
+cRAM_VIDEO/RAM12_0/N1(cRAM_VIDEO/RAM12_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM12_0/RAM12_0)| 8     |
+cRAM_VIDEO/RAM12_1/N1(cRAM_VIDEO/RAM12_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM12_1/RAM12_1)| 8     |
+cRAM_VIDEO/RAM12_2/N1(cRAM_VIDEO/RAM12_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM12_2/RAM12_2)| 8     |
+cRAM_VIDEO/RAM13_0/N1(cRAM_VIDEO/RAM13_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM13_0/RAM13_0)| 8     |
+cRAM_VIDEO/RAM13_1/N1(cRAM_VIDEO/RAM13_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM13_1/RAM13_1)| 8     |
+cRAM_VIDEO/RAM13_2/N1(cRAM_VIDEO/RAM13_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM13_2/RAM13_2)| 8     |
+cRAM_VIDEO/RAM14_0/N1(cRAM_VIDEO/RAM14_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM14_0/RAM14_0)| 8     |
+cRAM_VIDEO/RAM14_1/N1(cRAM_VIDEO/RAM14_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM14_1/RAM14_1)| 8     |
+cRAM_VIDEO/RAM14_2/N1(cRAM_VIDEO/RAM14_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM14_2/RAM14_2)| 8     |
+cRAM_VIDEO/RAM15_0/N1(cRAM_VIDEO/RAM15_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM15_0/RAM15_0)| 8     |
+cRAM_VIDEO/RAM15_1/N1(cRAM_VIDEO/RAM15_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM15_1/RAM15_1)| 8     |
+cRAM_VIDEO/RAM15_2/N1(cRAM_VIDEO/RAM15_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM15_2/RAM15_2)| 8     |
+cRAM_VIDEO/RAM16_0/N1(cRAM_VIDEO/RAM16_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM16_0/RAM16_0)| 8     |
+cRAM_VIDEO/RAM16_1/N1(cRAM_VIDEO/RAM16_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM16_1/RAM16_1)| 8     |
+cRAM_VIDEO/RAM16_2/N1(cRAM_VIDEO/RAM16_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM16_2/RAM16_2)| 8     |
+cRAM_VIDEO/RAM17_0/N1(cRAM_VIDEO/RAM17_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM17_0/RAM17_0)| 8     |
+cRAM_VIDEO/RAM17_1/N1(cRAM_VIDEO/RAM17_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM17_1/RAM17_1)| 8     |
+cRAM_VIDEO/RAM17_2/N1(cRAM_VIDEO/RAM17_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM17_2/RAM17_2)| 8     |
+cRAM_VIDEO/RAM18_0/N1(cRAM_VIDEO/RAM18_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM18_0/RAM18_0)| 8     |
+cRAM_VIDEO/RAM18_1/N1(cRAM_VIDEO/RAM18_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM18_1/RAM18_1)| 8     |
+cRAM_VIDEO/RAM18_2/N1(cRAM_VIDEO/RAM18_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM18_2/RAM18_2)| 8     |
+cRAM_VIDEO/RAM19_0/N1(cRAM_VIDEO/RAM19_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM19_0/RAM19_0)| 8     |
+cRAM_VIDEO/RAM19_1/N1(cRAM_VIDEO/RAM19_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM19_1/RAM19_1)| 8     |
+cRAM_VIDEO/RAM19_2/N1(cRAM_VIDEO/RAM19_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM19_2/RAM19_2)| 8     |
+cRAM_VIDEO/RAM1_0/N1(cRAM_VIDEO/RAM1_0/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM1_0/RAM1_0)  | 8     |
+cRAM_VIDEO/RAM1_1/N1(cRAM_VIDEO/RAM1_1/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM1_1/RAM1_1)  | 8     |
+cRAM_VIDEO/RAM1_2/N1(cRAM_VIDEO/RAM1_2/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM1_2/RAM1_2)  | 8     |
+cRAM_VIDEO/RAM20_0/N1(cRAM_VIDEO/RAM20_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM20_0/RAM20_0)| 8     |
+cRAM_VIDEO/RAM20_1/N1(cRAM_VIDEO/RAM20_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM20_1/RAM20_1)| 8     |
+cRAM_VIDEO/RAM20_2/N1(cRAM_VIDEO/RAM20_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM20_2/RAM20_2)| 8     |
+cRAM_VIDEO/RAM21_0/N1(cRAM_VIDEO/RAM21_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM21_0/RAM21_0)| 8     |
+cRAM_VIDEO/RAM21_1/N1(cRAM_VIDEO/RAM21_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM21_1/RAM21_1)| 8     |
+cRAM_VIDEO/RAM21_2/N1(cRAM_VIDEO/RAM21_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM21_2/RAM21_2)| 8     |
+cRAM_VIDEO/RAM22_0/N1(cRAM_VIDEO/RAM22_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM22_0/RAM22_0)| 8     |
+cRAM_VIDEO/RAM22_1/N1(cRAM_VIDEO/RAM22_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM22_1/RAM22_1)| 8     |
+cRAM_VIDEO/RAM22_2/N1(cRAM_VIDEO/RAM22_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM22_2/RAM22_2)| 8     |
+cRAM_VIDEO/RAM23_0/N1(cRAM_VIDEO/RAM23_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM23_0/RAM23_0)| 8     |
+cRAM_VIDEO/RAM23_1/N1(cRAM_VIDEO/RAM23_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM23_1/RAM23_1)| 8     |
+cRAM_VIDEO/RAM23_2/N1(cRAM_VIDEO/RAM23_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM23_2/RAM23_2)| 8     |
+cRAM_VIDEO/RAM24_0/N1(cRAM_VIDEO/RAM24_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM24_0/RAM24_0)| 8     |
+cRAM_VIDEO/RAM24_1/N1(cRAM_VIDEO/RAM24_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM24_1/RAM24_1)| 8     |
+cRAM_VIDEO/RAM24_2/N1(cRAM_VIDEO/RAM24_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM24_2/RAM24_2)| 8     |
+cRAM_VIDEO/RAM25_0/N1(cRAM_VIDEO/RAM25_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM25_0/RAM25_0)| 8     |
+cRAM_VIDEO/RAM25_1/N1(cRAM_VIDEO/RAM25_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM25_1/RAM25_1)| 8     |
+cRAM_VIDEO/RAM25_2/N1(cRAM_VIDEO/RAM25_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM25_2/RAM25_2)| 8     |
+cRAM_VIDEO/RAM26_0/N1(cRAM_VIDEO/RAM26_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM26_0/RAM26_0)| 8     |
+cRAM_VIDEO/RAM26_1/N1(cRAM_VIDEO/RAM26_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM26_1/RAM26_1)| 8     |
+cRAM_VIDEO/RAM26_2/N1(cRAM_VIDEO/RAM26_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM26_2/RAM26_2)| 8     |
+cRAM_VIDEO/RAM27_0/N1(cRAM_VIDEO/RAM27_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM27_0/RAM27_0)| 8     |
+cRAM_VIDEO/RAM27_1/N1(cRAM_VIDEO/RAM27_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM27_1/RAM27_1)| 8     |
+cRAM_VIDEO/RAM27_2/N1(cRAM_VIDEO/RAM27_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM27_2/RAM27_2)| 8     |
+cRAM_VIDEO/RAM28_0/N1(cRAM_VIDEO/RAM28_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM28_0/RAM28_0)| 8     |
+cRAM_VIDEO/RAM28_1/N1(cRAM_VIDEO/RAM28_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM28_1/RAM28_1)| 8     |
+cRAM_VIDEO/RAM28_2/N1(cRAM_VIDEO/RAM28_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM28_2/RAM28_2)| 8     |
+cRAM_VIDEO/RAM29_0/N1(cRAM_VIDEO/RAM29_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM29_0/RAM29_0)| 8     |
+cRAM_VIDEO/RAM29_1/N1(cRAM_VIDEO/RAM29_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM29_1/RAM29_1)| 8     |
+cRAM_VIDEO/RAM29_2/N1(cRAM_VIDEO/RAM29_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM29_2/RAM29_2)| 8     |
+cRAM_VIDEO/RAM2_0/N1(cRAM_VIDEO/RAM2_0/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM2_0/RAM2_0)  | 8     |
+cRAM_VIDEO/RAM2_1/N1(cRAM_VIDEO/RAM2_1/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM2_1/RAM2_1)  | 8     |
+cRAM_VIDEO/RAM2_2/N1(cRAM_VIDEO/RAM2_2/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM2_2/RAM2_2)  | 8     |
+cRAM_VIDEO/RAM30_0/N1(cRAM_VIDEO/RAM30_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM30_0/RAM30_0)| 8     |
+cRAM_VIDEO/RAM30_1/N1(cRAM_VIDEO/RAM30_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM30_1/RAM30_1)| 8     |
+cRAM_VIDEO/RAM30_2/N1(cRAM_VIDEO/RAM30_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM30_2/RAM30_2)| 8     |
+cRAM_VIDEO/RAM31_0/N1(cRAM_VIDEO/RAM31_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM31_0/RAM31_0)| 8     |
+cRAM_VIDEO/RAM31_1/N1(cRAM_VIDEO/RAM31_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM31_1/RAM31_1)| 8     |
+cRAM_VIDEO/RAM31_2/N1(cRAM_VIDEO/RAM31_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM31_2/RAM31_2)| 8     |
+cRAM_VIDEO/RAM32_0/N1(cRAM_VIDEO/RAM32_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM32_0/RAM32_0)| 8     |
+cRAM_VIDEO/RAM32_1/N1(cRAM_VIDEO/RAM32_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM32_1/RAM32_1)| 8     |
+cRAM_VIDEO/RAM32_2/N1(cRAM_VIDEO/RAM32_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM32_2/RAM32_2)| 8     |
+cRAM_VIDEO/RAM33_0/N1(cRAM_VIDEO/RAM33_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM33_0/RAM33_0)| 8     |
+cRAM_VIDEO/RAM33_1/N1(cRAM_VIDEO/RAM33_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM33_1/RAM33_1)| 8     |
+cRAM_VIDEO/RAM33_2/N1(cRAM_VIDEO/RAM33_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM33_2/RAM33_2)| 8     |
+cRAM_VIDEO/RAM34_0/N1(cRAM_VIDEO/RAM34_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM34_0/RAM34_0)| 8     |
+cRAM_VIDEO/RAM34_1/N1(cRAM_VIDEO/RAM34_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM34_1/RAM34_1)| 8     |
+cRAM_VIDEO/RAM34_2/N1(cRAM_VIDEO/RAM34_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM34_2/RAM34_2)| 8     |
+cRAM_VIDEO/RAM35_0/N1(cRAM_VIDEO/RAM35_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM35_0/RAM35_0)| 8     |
+cRAM_VIDEO/RAM35_1/N1(cRAM_VIDEO/RAM35_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM35_1/RAM35_1)| 8     |
+cRAM_VIDEO/RAM35_2/N1(cRAM_VIDEO/RAM35_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM35_2/RAM35_2)| 8     |
+cRAM_VIDEO/RAM36_0/N1(cRAM_VIDEO/RAM36_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM36_0/RAM36_0)| 8     |
+cRAM_VIDEO/RAM36_1/N1(cRAM_VIDEO/RAM36_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM36_1/RAM36_1)| 8     |
+cRAM_VIDEO/RAM36_2/N1(cRAM_VIDEO/RAM36_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM36_2/RAM36_2)| 8     |
+cRAM_VIDEO/RAM37_0/N1(cRAM_VIDEO/RAM37_0/XST_VCC:P)| NONE(cRAM_VIDEO/RAM37_0/RAM37_0)| 8     |
+cRAM_VIDEO/RAM37_1/N1(cRAM_VIDEO/RAM37_1/XST_VCC:P)| NONE(cRAM_VIDEO/RAM37_1/RAM37_1)| 8     |
+cRAM_VIDEO/RAM37_2/N1(cRAM_VIDEO/RAM37_2/XST_VCC:P)| NONE(cRAM_VIDEO/RAM37_2/RAM37_2)| 8     |
+cRAM_VIDEO/RAM3_0/N1(cRAM_VIDEO/RAM3_0/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM3_0/RAM3_0)  | 8     |
+cRAM_VIDEO/RAM3_1/N1(cRAM_VIDEO/RAM3_1/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM3_1/RAM3_1)  | 8     |
+cRAM_VIDEO/RAM3_2/N1(cRAM_VIDEO/RAM3_2/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM3_2/RAM3_2)  | 8     |
+cRAM_VIDEO/RAM4_0/N1(cRAM_VIDEO/RAM4_0/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM4_0/RAM4_0)  | 8     |
+cRAM_VIDEO/RAM4_1/N1(cRAM_VIDEO/RAM4_1/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM4_1/RAM4_1)  | 8     |
+cRAM_VIDEO/RAM4_2/N1(cRAM_VIDEO/RAM4_2/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM4_2/RAM4_2)  | 8     |
+cRAM_VIDEO/RAM5_0/N1(cRAM_VIDEO/RAM5_0/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM5_0/RAM5_0)  | 8     |
+cRAM_VIDEO/RAM5_1/N1(cRAM_VIDEO/RAM5_1/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM5_1/RAM5_1)  | 8     |
+cRAM_VIDEO/RAM5_2/N1(cRAM_VIDEO/RAM5_2/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM5_2/RAM5_2)  | 8     |
+cRAM_VIDEO/RAM6_0/N1(cRAM_VIDEO/RAM6_0/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM6_0/RAM6_0)  | 8     |
+cRAM_VIDEO/RAM6_1/N1(cRAM_VIDEO/RAM6_1/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM6_1/RAM6_1)  | 8     |
+cRAM_VIDEO/RAM6_2/N1(cRAM_VIDEO/RAM6_2/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM6_2/RAM6_2)  | 8     |
+cRAM_VIDEO/RAM7_0/N1(cRAM_VIDEO/RAM7_0/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM7_0/RAM7_0)  | 8     |
+cRAM_VIDEO/RAM7_1/N1(cRAM_VIDEO/RAM7_1/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM7_1/RAM7_1)  | 8     |
+cRAM_VIDEO/RAM7_2/N1(cRAM_VIDEO/RAM7_2/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM7_2/RAM7_2)  | 8     |
+cRAM_VIDEO/RAM8_0/N1(cRAM_VIDEO/RAM8_0/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM8_0/RAM8_0)  | 8     |
+cRAM_VIDEO/RAM8_1/N1(cRAM_VIDEO/RAM8_1/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM8_1/RAM8_1)  | 8     |
+cRAM_VIDEO/RAM8_2/N1(cRAM_VIDEO/RAM8_2/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM8_2/RAM8_2)  | 8     |
+cRAM_VIDEO/RAM9_0/N1(cRAM_VIDEO/RAM9_0/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM9_0/RAM9_0)  | 8     |
+cRAM_VIDEO/RAM9_1/N1(cRAM_VIDEO/RAM9_1/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM9_1/RAM9_1)  | 8     |
+cRAM_VIDEO/RAM9_2/N1(cRAM_VIDEO/RAM9_2/XST_VCC:P)  | NONE(cRAM_VIDEO/RAM9_2/RAM9_2)  | 8     |
+---------------------------------------------------+---------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 4.432ns (Maximum Frequency: 225.627MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.158ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.432ns (frequency: 225.627MHz)
+  Total number of paths / destination ports: 78498 / 1441
+-------------------------------------------------------------------------
+Delay:               4.432ns (Levels of Logic = 14)
+  Source:            cGeneSync/comptY_0 (FF)
+  Destination:       cRAM_VIDEO/RAM24_2/RAM24_2 (RAM)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: cGeneSync/comptY_0 to cRAM_VIDEO/RAM24_2/RAM24_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.282   0.512  cGeneSync/comptY_0 (cGeneSync/comptY_0)
+     LUT2:I0->O            1   0.053   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_lut<4> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_lut<4>)
+     MUXCY:S->O            1   0.291   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<4> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<5> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<5>)
+     MUXCY:CI->O           1   0.015   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<6> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<6>)
+     MUXCY:CI->O           1   0.015   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<7> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<7>)
+     MUXCY:CI->O           1   0.015   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<8> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<8>)
+     MUXCY:CI->O           1   0.015   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<9> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<9>)
+     MUXCY:CI->O           1   0.015   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<10> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<10>)
+     XORCY:CI->O           1   0.320   0.413  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_xor<11> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_14)
+     LUT1:I0->O            1   0.053   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd_cy<14>_rt (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd_cy<14>_rt)
+     MUXCY:S->O            1   0.291   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd_cy<14> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd_cy<14>)
+     XORCY:CI->O          62   0.320   0.898  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd_xor<15> (AD<15>)
+     LUT6:I0->O            3   0.053   0.413  cRAM_VIDEO/en<17><16>1 (cRAM_VIDEO/en<17>)
+     begin scope: 'cRAM_VIDEO/RAM17_0:EN'
+     RAMB18E1:ENARDEN          0.443          RAM17_0
+    ----------------------------------------
+    Total                      4.432ns (2.196ns logic, 2.236ns route)
+                                       (49.5% logic, 50.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 44566 / 8
+-------------------------------------------------------------------------
+Offset:              6.158ns (Levels of Logic = 16)
+  Source:            cGeneSync/comptY_0 (FF)
+  Destination:       R<4> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: cGeneSync/comptY_0 to R<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             5   0.282   0.512  cGeneSync/comptY_0 (cGeneSync/comptY_0)
+     LUT2:I0->O            1   0.053   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_lut<4> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_lut<4>)
+     MUXCY:S->O            1   0.291   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<4> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<5> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<5>)
+     MUXCY:CI->O           1   0.015   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<6> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<6>)
+     MUXCY:CI->O           1   0.015   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<7> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_cy<7>)
+     XORCY:CI->O           1   0.320   0.413  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd1_xor<8> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_11)
+     LUT1:I0->O            1   0.053   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd_cy<11>_rt (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd_cy<11>_rt)
+     MUXCY:S->O            1   0.291   0.000  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd_cy<11> (cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd_cy<11>)
+     XORCY:CI->O         254   0.320   0.940  cGeneRGB/Maddsub_PWR_9_o_Y[8]_MuLt_0_OUT_Madd_xor<12> (AD<12>)
+     LUT6:I0->O            1   0.053   0.635  cRAM_VIDEO/Mmux_do_1031 (cRAM_VIDEO/Mmux_do_1031)
+     LUT6:I2->O            1   0.053   0.000  cRAM_VIDEO/Mmux_do_521 (cRAM_VIDEO/Mmux_do_521)
+     MUXF7:I1->O           1   0.217   0.000  cRAM_VIDEO/Mmux_do_4_f7_9 (cRAM_VIDEO/Mmux_do_4_f710)
+     MUXF8:I0->O           1   0.160   0.602  cRAM_VIDEO/Mmux_do_2_f8_9 (DATA<19>)
+     LUT3:I0->O            1   0.053   0.413  Mmux_B2_SW0 (N14)
+     LUT6:I5->O            1   0.053   0.399  Mmux_B2 (B_4_OBUF)
+     OBUF:I->O                 0.000          B_4_OBUF (B<4>)
+    ----------------------------------------
+    Total                      6.158ns (2.244ns logic, 3.914ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.432|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 14.32 secs
+ 
+--> 
+
+
+Total memory usage is 720740 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :  117 (   0 filtered)
+

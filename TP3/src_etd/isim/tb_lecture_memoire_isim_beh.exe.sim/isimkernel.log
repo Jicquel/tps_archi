@@ -1,0 +1,31 @@
+Command line:
+   tb_lecture_memoire_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  47577
+
+Thu Nov 23 10:04:36 2017
+
+
+ Elaboration Time: 0.16 sec
+
+ Current Memory Usage: 260.407 Meg
+
+ Total Signals          : 1535
+ Total Nets             : 3620
+ Total Signal Drivers   : 352
+ Total Blocks           : 127
+ Total Primitive Blocks : 123
+ Total Processes        : 237
+ Total Traceable Variables  : 16315
+ Total Scalar Nets and Variables : 3981695
+In process lecture_memoire.vhd:52 
+ Target Size 17 and source size 34 for array dimension 0 does not match. 
+
+
+ Total Simulation Time: 0.17 sec
+
+ Current Memory Usage: 334.864 Meg
+
+Thu Nov 23 10:04:39 2017
+

@@ -1,0 +1,34 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Sep 18 17:58:23 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "L16" LEVEL 1;
+COMP "B<0>" LOCATE = SITE "G15" LEVEL 1;
+COMP "B<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "B<2>" LOCATE = SITE "W13" LEVEL 1;
+COMP "B<3>" LOCATE = SITE "T16" LEVEL 1;
+COMP "B<4>" LOCATE = SITE "V16" LEVEL 1;
+COMP "B<5>" LOCATE = SITE "Y16" LEVEL 1;
+COMP "start" LOCATE = SITE "P16" LEVEL 1;
+COMP "reset" LOCATE = SITE "R18" LEVEL 1;
+COMP "aff<0>" LOCATE = SITE "M14" LEVEL 1;
+COMP "aff<1>" LOCATE = SITE "M15" LEVEL 1;
+COMP "aff<2>" LOCATE = SITE "G14" LEVEL 1;
+COMP "aff<3>" LOCATE = SITE "D18" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "i_PGCD/i_PO/regB/Q_7" BEL "i_PGCD/i_PO/regB/Q_6"
+        BEL "i_PGCD/i_PO/regB/Q_5" BEL "i_PGCD/i_PO/regB/Q_4" BEL
+        "i_PGCD/i_PO/regB/Q_3" BEL "i_PGCD/i_PO/regB/Q_2" BEL
+        "i_PGCD/i_PO/regB/Q_1" BEL "i_PGCD/i_PO/regB/Q_0" BEL
+        "i_PGCD/i_PO/regA/Q_7" BEL "i_PGCD/i_PO/regA/Q_6" BEL
+        "i_PGCD/i_PO/regA/Q_5" BEL "i_PGCD/i_PO/regA/Q_4" BEL
+        "i_PGCD/i_PO/regA/Q_3" BEL "i_PGCD/i_PO/regA/Q_2" BEL
+        "i_PGCD/i_PO/regA/Q_1" BEL "i_PGCD/i_PO/regA/Q_0" BEL "regA/Q_7" BEL
+        "regA/Q_6" BEL "regA/Q_5" BEL "regA/Q_4" BEL "regA/Q_3" BEL "regA/Q_2"
+        BEL "regA/Q_1" BEL "regA/Q_0" BEL "i_PGCD/i_PC/s_test/Q" BEL
+        "i_PGCD/i_PC/s_subab/Q" BEL "i_PGCD/i_PC/s_subba/Q" BEL
+        "i_PGCD/i_PC/s_end/Q" BEL "i_PGCD/i_PC/s_init/Q" BEL
+        "i_PGCD/i_PC/s_wait/Q" BEL "clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 125 MHz HIGH 50%;
+SCHEMATIC END;
+

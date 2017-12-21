@@ -1,0 +1,447 @@
+Release 14.7 - Bitgen P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Loading device for application Rf_Device from file '7z010.nph' in environment
+/Xilinx/14.7/ISE_DS/ISE/.
+   "VGA" is an NCD, version 3.2, device xc7z010, package clg400, speed -1
+Opened constraints file VGA_bitmap.pcf.
+
+Thu Nov 23 10:42:18 2017
+
+/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/bitgen -intstyle xflow -w -g Binary:no -g CRC:Enable -g ProgPin:PullUp -g InitPin:Pullup -g TckPin:PullUp -g TdiPin:PullUp -g TdoPin:PullUp -g TmsPin:PullUp -g Disable_JTAG:No -g UnusedPin:PullDown -g UserID:0xFFFFFFFF -g OverTempPowerDown:Disable -g USR_ACCESS:None -g JTAG_XADC:Enable -g DCIUpdateMode:AsRequired -g StartUpClk:CClk -g DONE_cycle:4 -g GTS_cycle:5 -g GWE_cycle:6 -g Match_cycle:Auto -g Security:None -g ICAP_select:Auto -g DonePipe:Yes -g DriveDone:No VGA_bitmap.ncd golden.bit 
+
+INFO:Bitgen:40 - Replacing "Auto" with "NoWait" for option "Match_cycle".  Most
+   commonly, bitgen has determined and will use a specific value instead of the
+   generic command-line value of "Auto".  Alternately, this message appears if
+   the same option is specified multiple times on the command-line.  In this
+   case, the option listed last will be used.
+Summary of Bitgen Options:
++----------------------+----------------------+
+| Option Name          | Current Setting      |
++----------------------+----------------------+
+| Compress             | (Not Specified)*     |
++----------------------+----------------------+
+| Readback             | (Not Specified)*     |
++----------------------+----------------------+
+| CRC                  | Enable**             |
++----------------------+----------------------+
+| StartupClk           | Cclk**               |
++----------------------+----------------------+
+| DonePin              | Pullup*              |
++----------------------+----------------------+
+| ProgPin              | Pullup**             |
++----------------------+----------------------+
+| InitPin              | Pullup**             |
++----------------------+----------------------+
+| TckPin               | Pullup**             |
++----------------------+----------------------+
+| TdiPin               | Pullup**             |
++----------------------+----------------------+
+| TdoPin               | Pullup**             |
++----------------------+----------------------+
+| TmsPin               | Pullup**             |
++----------------------+----------------------+
+| UnusedPin            | Pulldown**           |
++----------------------+----------------------+
+| GWE_cycle            | 6**                  |
++----------------------+----------------------+
+| GTS_cycle            | 5**                  |
++----------------------+----------------------+
+| OverTempPowerDown    | Disable**            |
++----------------------+----------------------+
+| LCK_cycle            | NoWait*              |
++----------------------+----------------------+
+| Match_cycle          | NoWait               |
++----------------------+----------------------+
+| DONE_cycle           | 4**                  |
++----------------------+----------------------+
+| DonePipe             | Yes**                |
++----------------------+----------------------+
+| Security             | None**               |
++----------------------+----------------------+
+| UserID               | 0xFFFFFFFF**         |
++----------------------+----------------------+
+| ActiveReconfig       | No*                  |
++----------------------+----------------------+
+| DCIUpdateMode        | AsRequired**         |
++----------------------+----------------------+
+| ICAP_Select          | Auto**               |
++----------------------+----------------------+
+| InitSignalsError     | Enable*              |
++----------------------+----------------------+
+| XADCPartialReconfig  | Disable*             |
++----------------------+----------------------+
+| XADCEnhancedLinearity | Off*                 |
++----------------------+----------------------+
+| JTAG_XADC            | Enable**             |
++----------------------+----------------------+
+| Disable_JTAG         | No**                 |
++----------------------+----------------------+
+| XADCPowerDown        | Disable*             |
++----------------------+----------------------+
+| Partial              | (Not Specified)*     |
++----------------------+----------------------+
+| USR_ACCESS           | None**               |
++----------------------+----------------------+
+| TimeStamp            | Default*             |
++----------------------+----------------------+
+| IEEE1532             | No*                  |
++----------------------+----------------------+
+| Binary               | No**                 |
++----------------------+----------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+There were 0 CONFIG constraint(s) processed from VGA_bitmap.pcf.
+
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM0_2' at 'RAMB18_X1Y4' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM0_1' at 'RAMB18_X0Y17' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM0_0' at 'RAMB18_X2Y11' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM1_2' at 'RAMB18_X1Y2' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM1_1' at 'RAMB18_X0Y16' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM1_0' at 'RAMB18_X1Y10' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM2_2' at 'RAMB18_X1Y5' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM2_1' at 'RAMB18_X0Y13' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM2_0' at 'RAMB18_X2Y7' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM3_2' at 'RAMB18_X1Y1' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM3_1' at 'RAMB18_X0Y15' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM3_0' at 'RAMB18_X2Y9' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM4_2' at 'RAMB18_X1Y6' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM4_1' at 'RAMB18_X1Y16' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM4_0' at 'RAMB18_X2Y8' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM5_2' at 'RAMB18_X1Y3' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM5_1' at 'RAMB18_X1Y15' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM5_0' at 'RAMB18_X2Y10' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM6_2' at 'RAMB18_X1Y0' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM6_1' at 'RAMB18_X1Y17' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM6_0' at 'RAMB18_X2Y6' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM7_2' at 'RAMB18_X2Y4' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM7_1' at 'RAMB18_X1Y14' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM7_0' at 'RAMB18_X2Y5' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM8_2' at 'RAMB18_X0Y8' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM8_1' at 'RAMB18_X0Y26' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM8_0' at 'RAMB18_X0Y11' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM9_2' at 'RAMB18_X0Y9' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM9_1' at 'RAMB18_X0Y27' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM9_0' at 'RAMB18_X0Y14' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM10_2' at 'RAMB18_X0Y5' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM10_1' at 'RAMB18_X0Y25' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM10_0' at 'RAMB18_X0Y12' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM11_2' at 'RAMB18_X0Y10' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM11_1' at 'RAMB18_X0Y29' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM11_0' at 'RAMB18_X1Y11' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM12_2' at 'RAMB18_X0Y6' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM12_1' at 'RAMB18_X0Y21' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM12_0' at 'RAMB18_X1Y9' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM13_2' at 'RAMB18_X0Y7' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM13_1' at 'RAMB18_X0Y19' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM13_0' at 'RAMB18_X1Y7' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM14_2' at 'RAMB18_X0Y4' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM14_1' at 'RAMB18_X0Y20' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM14_0' at 'RAMB18_X1Y8' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM15_2' at 'RAMB18_X0Y3' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM15_1' at 'RAMB18_X0Y22' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM15_0' at 'RAMB18_X0Y2' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM16_2' at 'RAMB18_X1Y29' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM16_1' at 'RAMB18_X2Y38' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM16_0' at 'RAMB18_X1Y39' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM17_2' at 'RAMB18_X2Y29' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM17_1' at 'RAMB18_X2Y37' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM17_0' at 'RAMB18_X1Y37' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM18_2' at 'RAMB18_X1Y30' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM18_1' at 'RAMB18_X1Y36' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM18_0' at 'RAMB18_X1Y38' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM19_2' at 'RAMB18_X1Y28' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM19_1' at 'RAMB18_X2Y39' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM19_0' at 'RAMB18_X0Y39' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM20_2' at 'RAMB18_X2Y30' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM20_1' at 'RAMB18_X2Y31' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM20_0' at 'RAMB18_X0Y30' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM21_2' at 'RAMB18_X2Y32' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM21_1' at 'RAMB18_X2Y34' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM21_0' at 'RAMB18_X0Y32' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM22_2' at 'RAMB18_X1Y34' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM22_1' at 'RAMB18_X1Y35' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM22_0' at 'RAMB18_X1Y31' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM23_2' at 'RAMB18_X1Y32' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM23_1' at 'RAMB18_X2Y33' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM23_0' at 'RAMB18_X0Y31' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM24_2' at 'RAMB18_X2Y17' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM24_1' at 'RAMB18_X2Y27' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM24_0' at 'RAMB18_X2Y12' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM25_2' at 'RAMB18_X2Y14' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM25_1' at 'RAMB18_X2Y28' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM25_0' at 'RAMB18_X2Y13' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM26_2' at 'RAMB18_X2Y16' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM26_1' at 'RAMB18_X2Y26' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM26_0' at 'RAMB18_X1Y13' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM27_2' at 'RAMB18_X2Y15' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM27_1' at 'RAMB18_X1Y27' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM27_0' at 'RAMB18_X1Y12' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM28_2' at 'RAMB18_X0Y38' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM28_1' at 'RAMB18_X1Y33' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM28_0' at 'RAMB18_X0Y23' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM29_2' at 'RAMB18_X0Y36' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM29_1' at 'RAMB18_X0Y37' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM29_0' at 'RAMB18_X0Y34' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM30_2' at 'RAMB18_X0Y33' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM30_1' at 'RAMB18_X2Y36' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM30_0' at 'RAMB18_X0Y28' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM31_2' at 'RAMB18_X0Y35' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM31_1' at 'RAMB18_X2Y35' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM31_0' at 'RAMB18_X0Y24' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM32_2' at 'RAMB18_X2Y23' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM32_1' at 'RAMB18_X2Y24' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM32_0' at 'RAMB18_X2Y21' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM33_2' at 'RAMB18_X1Y22' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM33_1' at 'RAMB18_X1Y24' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM33_0' at 'RAMB18_X2Y18' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM34_2' at 'RAMB18_X0Y18' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM34_1' at 'RAMB18_X1Y25' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM34_0' at 'RAMB18_X1Y19' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM35_2' at 'RAMB18_X1Y21' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM35_1' at 'RAMB18_X1Y23' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM35_0' at 'RAMB18_X1Y18' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM36_2' at 'RAMB18_X1Y20' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM36_1' at 'RAMB18_X1Y26' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM36_0' at 'RAMB18_X2Y19' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM37_2' at 'RAMB18_X2Y22' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM37_1' at 'RAMB18_X2Y25' location successfully updated with design data.
+
+
+INFO::100 - BRAM 'cRAM_VIDEO/RAM37_0' at 'RAMB18_X2Y20' location successfully updated with design data.
+
+Running DRC.
+WARNING:PhysDesignRules:2500 - This design does not have a PS7 block.
+   Instantiate the PS7 block in order to ensure proper fabric tie-offs and
+   correct operation of the processing_system7.
+DRC detected 0 errors and 1 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
+Creating bit map...
+Saving bit stream in "golden.bit".
+Bitstream generation is complete.

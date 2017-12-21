@@ -1,0 +1,8 @@
+vhdl work "vhd/GeneSync.vhd"
+vhdl work "vhd/GeneRGB_bitmap.vhd"
+vhdl work "vhd/reg1b.vhd"
+vhdl work "vhd/reg2b.vhd"
+vhdl work "vhd/prog_data.vhd"
+vhdl work "vhd/RAM_Video.vhd"
+vhdl work "vhd/VGA_bitmap.vhd"
+vhdl work "vhd/tb_VGA.vhd"

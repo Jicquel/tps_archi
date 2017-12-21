@@ -1,0 +1,35 @@
+Command line:
+   tb_PGCDFPGA_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  41497
+
+Fri Sep 18 17:56:32 2015
+
+
+ Elaboration Time: 0.08 sec
+
+ Current Memory Usage: 218.419 Meg
+
+ Total Signals          : 125
+ Total Nets             : 127
+ Total Signal Drivers   : 40
+ Total Blocks           : 18
+ Total Primitive Blocks : 13
+ Total Processes        : 37
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 611
+Total Line Count : 96
+
+** Failure:Simulation terminé
+User(VHDL) Code Called Simulation Stop
+In process tb_pgcdfpga.vhd:40 
+ 
+
+
+ Total Simulation Time: 0.08 sec
+
+ Current Memory Usage: 294.973 Meg
+
+Fri Sep 18 17:57:12 2015
+

@@ -1,0 +1,39 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+xflow -bm VGA_bitmap.bmm -dd _ngo -nt timestamp -uc VGA.ucf -p xc7z010-clg400-1
+VGA_bitmap.ngc VGA_bitmap.ngd
+
+Reading NGO file
+"/user/9/.base/llavorij/home/Documents/TP_archi/TP3/src_etd/VGA_bitmap.ngc" ...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "VGA.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Processing BMM file "VGA_bitmap.bmm" ...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 567060 kilobytes
+
+Writing NGD file "VGA_bitmap.ngd" ...
+Total REAL time to NGDBUILD completion:  7 sec
+Total CPU time to NGDBUILD completion:   6 sec
+
+Writing NGDBUILD log file "VGA_bitmap.bld"...

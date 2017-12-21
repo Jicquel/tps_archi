@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Nov 08 14:56:09 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V12" LEVEL 1;
+PIN clk_pin<0> = BEL "clk" PINNAME PAD;
+PIN "clk_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "s" LOCATE = SITE "M14" LEVEL 1;
+COMP "reset" LOCATE = SITE "R18" LEVEL 1;
+SCHEMATIC END;
+

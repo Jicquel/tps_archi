@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/PGCDFPGA.ncd
+OUTFILE=/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof/download.bit
+FAMILY=Zynq
+PART=xc7z010-1clg400
+WORKINGDIR=/user/9/.base/mullero/home/cours/archi1/TP/tp4/src_prof
+LICENSE=WebPack
+USER_INFO=211048036_0_0_210

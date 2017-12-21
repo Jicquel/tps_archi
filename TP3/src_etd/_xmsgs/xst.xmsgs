@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_comptI[1]_GND_12_o_wide_mux_21_OUT</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="3218" delta="new" >HDL ADVISOR - The RAM &lt;<arg fmt="%s" index="1">Mram_comptJ[1]_GND_12_o_wide_mux_23_OUT</arg>&gt; will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM0_0</arg> in unit <arg fmt="%s" index="2">RAM0_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM0_1</arg> in unit <arg fmt="%s" index="2">RAM0_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM0_2</arg> in unit <arg fmt="%s" index="2">RAM0_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM1_0</arg> in unit <arg fmt="%s" index="2">RAM1_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM1_1</arg> in unit <arg fmt="%s" index="2">RAM1_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM1_2</arg> in unit <arg fmt="%s" index="2">RAM1_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM2_0</arg> in unit <arg fmt="%s" index="2">RAM2_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM2_1</arg> in unit <arg fmt="%s" index="2">RAM2_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM2_2</arg> in unit <arg fmt="%s" index="2">RAM2_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM3_0</arg> in unit <arg fmt="%s" index="2">RAM3_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM3_1</arg> in unit <arg fmt="%s" index="2">RAM3_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM3_2</arg> in unit <arg fmt="%s" index="2">RAM3_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM4_0</arg> in unit <arg fmt="%s" index="2">RAM4_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM4_1</arg> in unit <arg fmt="%s" index="2">RAM4_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM4_2</arg> in unit <arg fmt="%s" index="2">RAM4_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM5_0</arg> in unit <arg fmt="%s" index="2">RAM5_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM5_1</arg> in unit <arg fmt="%s" index="2">RAM5_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM5_2</arg> in unit <arg fmt="%s" index="2">RAM5_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM6_0</arg> in unit <arg fmt="%s" index="2">RAM6_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM6_1</arg> in unit <arg fmt="%s" index="2">RAM6_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM6_2</arg> in unit <arg fmt="%s" index="2">RAM6_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM7_0</arg> in unit <arg fmt="%s" index="2">RAM7_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM7_1</arg> in unit <arg fmt="%s" index="2">RAM7_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM7_2</arg> in unit <arg fmt="%s" index="2">RAM7_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM8_0</arg> in unit <arg fmt="%s" index="2">RAM8_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM8_1</arg> in unit <arg fmt="%s" index="2">RAM8_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM8_2</arg> in unit <arg fmt="%s" index="2">RAM8_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM9_0</arg> in unit <arg fmt="%s" index="2">RAM9_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM9_1</arg> in unit <arg fmt="%s" index="2">RAM9_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM9_2</arg> in unit <arg fmt="%s" index="2">RAM9_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM10_0</arg> in unit <arg fmt="%s" index="2">RAM10_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM10_1</arg> in unit <arg fmt="%s" index="2">RAM10_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM10_2</arg> in unit <arg fmt="%s" index="2">RAM10_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM11_0</arg> in unit <arg fmt="%s" index="2">RAM11_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM11_1</arg> in unit <arg fmt="%s" index="2">RAM11_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM11_2</arg> in unit <arg fmt="%s" index="2">RAM11_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM12_0</arg> in unit <arg fmt="%s" index="2">RAM12_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM12_1</arg> in unit <arg fmt="%s" index="2">RAM12_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM12_2</arg> in unit <arg fmt="%s" index="2">RAM12_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM13_0</arg> in unit <arg fmt="%s" index="2">RAM13_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM13_1</arg> in unit <arg fmt="%s" index="2">RAM13_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM13_2</arg> in unit <arg fmt="%s" index="2">RAM13_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM14_0</arg> in unit <arg fmt="%s" index="2">RAM14_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM14_1</arg> in unit <arg fmt="%s" index="2">RAM14_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM14_2</arg> in unit <arg fmt="%s" index="2">RAM14_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM15_0</arg> in unit <arg fmt="%s" index="2">RAM15_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM15_1</arg> in unit <arg fmt="%s" index="2">RAM15_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM15_2</arg> in unit <arg fmt="%s" index="2">RAM15_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM16_0</arg> in unit <arg fmt="%s" index="2">RAM16_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM16_1</arg> in unit <arg fmt="%s" index="2">RAM16_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM16_2</arg> in unit <arg fmt="%s" index="2">RAM16_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM17_0</arg> in unit <arg fmt="%s" index="2">RAM17_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM17_1</arg> in unit <arg fmt="%s" index="2">RAM17_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM17_2</arg> in unit <arg fmt="%s" index="2">RAM17_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM18_0</arg> in unit <arg fmt="%s" index="2">RAM18_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM18_1</arg> in unit <arg fmt="%s" index="2">RAM18_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM18_2</arg> in unit <arg fmt="%s" index="2">RAM18_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM19_0</arg> in unit <arg fmt="%s" index="2">RAM19_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM19_1</arg> in unit <arg fmt="%s" index="2">RAM19_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM19_2</arg> in unit <arg fmt="%s" index="2">RAM19_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM20_0</arg> in unit <arg fmt="%s" index="2">RAM20_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM20_1</arg> in unit <arg fmt="%s" index="2">RAM20_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM20_2</arg> in unit <arg fmt="%s" index="2">RAM20_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM21_0</arg> in unit <arg fmt="%s" index="2">RAM21_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM21_1</arg> in unit <arg fmt="%s" index="2">RAM21_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM21_2</arg> in unit <arg fmt="%s" index="2">RAM21_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM22_0</arg> in unit <arg fmt="%s" index="2">RAM22_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM22_1</arg> in unit <arg fmt="%s" index="2">RAM22_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM22_2</arg> in unit <arg fmt="%s" index="2">RAM22_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM23_0</arg> in unit <arg fmt="%s" index="2">RAM23_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM23_1</arg> in unit <arg fmt="%s" index="2">RAM23_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM23_2</arg> in unit <arg fmt="%s" index="2">RAM23_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM24_0</arg> in unit <arg fmt="%s" index="2">RAM24_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM24_1</arg> in unit <arg fmt="%s" index="2">RAM24_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM24_2</arg> in unit <arg fmt="%s" index="2">RAM24_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM25_0</arg> in unit <arg fmt="%s" index="2">RAM25_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM25_1</arg> in unit <arg fmt="%s" index="2">RAM25_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM25_2</arg> in unit <arg fmt="%s" index="2">RAM25_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM26_0</arg> in unit <arg fmt="%s" index="2">RAM26_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM26_1</arg> in unit <arg fmt="%s" index="2">RAM26_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM26_2</arg> in unit <arg fmt="%s" index="2">RAM26_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM27_0</arg> in unit <arg fmt="%s" index="2">RAM27_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM27_1</arg> in unit <arg fmt="%s" index="2">RAM27_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM27_2</arg> in unit <arg fmt="%s" index="2">RAM27_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM28_0</arg> in unit <arg fmt="%s" index="2">RAM28_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM28_1</arg> in unit <arg fmt="%s" index="2">RAM28_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM28_2</arg> in unit <arg fmt="%s" index="2">RAM28_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM29_0</arg> in unit <arg fmt="%s" index="2">RAM29_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM29_1</arg> in unit <arg fmt="%s" index="2">RAM29_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM29_2</arg> in unit <arg fmt="%s" index="2">RAM29_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM30_0</arg> in unit <arg fmt="%s" index="2">RAM30_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM30_1</arg> in unit <arg fmt="%s" index="2">RAM30_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM30_2</arg> in unit <arg fmt="%s" index="2">RAM30_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM31_0</arg> in unit <arg fmt="%s" index="2">RAM31_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM31_1</arg> in unit <arg fmt="%s" index="2">RAM31_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM31_2</arg> in unit <arg fmt="%s" index="2">RAM31_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM32_0</arg> in unit <arg fmt="%s" index="2">RAM32_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM32_1</arg> in unit <arg fmt="%s" index="2">RAM32_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM32_2</arg> in unit <arg fmt="%s" index="2">RAM32_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM33_0</arg> in unit <arg fmt="%s" index="2">RAM33_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM33_1</arg> in unit <arg fmt="%s" index="2">RAM33_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM33_2</arg> in unit <arg fmt="%s" index="2">RAM33_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM34_0</arg> in unit <arg fmt="%s" index="2">RAM34_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM34_1</arg> in unit <arg fmt="%s" index="2">RAM34_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM34_2</arg> in unit <arg fmt="%s" index="2">RAM34_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM35_0</arg> in unit <arg fmt="%s" index="2">RAM35_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM35_1</arg> in unit <arg fmt="%s" index="2">RAM35_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM35_2</arg> in unit <arg fmt="%s" index="2">RAM35_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM36_0</arg> in unit <arg fmt="%s" index="2">RAM36_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM36_1</arg> in unit <arg fmt="%s" index="2">RAM36_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM36_2</arg> in unit <arg fmt="%s" index="2">RAM36_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM37_0</arg> in unit <arg fmt="%s" index="2">RAM37_0</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM37_1</arg> in unit <arg fmt="%s" index="2">RAM37_1</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="new" >Instance <arg fmt="%s" index="1">RAM37_2</arg> in unit <arg fmt="%s" index="2">RAM37_2</arg> of type <arg fmt="%s" index="3">RAMB16_S9</arg> has been replaced by <arg fmt="%s" index="4">RAMB18E1</arg>
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="new" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+
